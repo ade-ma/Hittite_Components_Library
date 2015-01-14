@@ -1,0 +1,7 @@
+set_simulator_type(1);
+set_design_type(analogRFnet);
+decl Hittite_HMC383LC4_SPCompNetlistFmt = " ";
+decl Hittite_HMC383LC4_net=" ";
+Hittite_HMC383LC4_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC383LC4_cktName.net");
+Hittite_HMC383LC4_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC383LC4_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+create_item("Hittite_HMC383LC4" ,"GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  12-30 GHz","SNP",NULL,NULL,NULL,standard_dialog," ",Hittite_HMC383LC4_SPCompNetlistFmt,"Hittite_HMC383LC4_cktName",ComponentAnnotFmt,"Amp_Symbol_3_16",fixed_artwork,"lc4_108594",ITEM_PRIMITIVE_EX,create_parm("Temp","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",TEMPERATURE_UNIT,prm("StdForm", "25")),create_parm("Vdd","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",VOLTAGE_UNIT,prm("StdForm", "5 V")),create_parm("Gain","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",DB_GAIN_UNIT,prm("StdForm", "15 dB")),create_parm("RF_Range","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",FREQUENCY_UNIT,prm("StdForm", "12-30 GHz")),create_parm("File","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",STRING_UNIT,prm("StdForm", "\"HMC383LC4_deembedded.s2p\"")));

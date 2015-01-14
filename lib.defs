@@ -1,0 +1,5 @@
+# Library Defs for Hittite_Components_Library design kit
+DEFINE Hittite_Components_Library_tech ./Hittite_Components_Library_tech
+ASSIGN Hittite_Components_Library_tech libMode readOnly
+DEFINE Hittite_Components_Library ./Hittite_Components_Library
+ASSIGN Hittite_Components_Library libMode readOnly

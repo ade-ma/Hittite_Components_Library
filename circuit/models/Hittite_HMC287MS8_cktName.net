@@ -1,0 +1,5 @@
+define Hittite_HMC287MS8_cktName(Pin1 Pin2 )
+parameters File=" " Temp=" " Gain=" " Vdd=" " 
+#uselib "ckt", "S2P" 
+S2P:X1 Pin1 Pin2 0 File=File Temp=Temp Gain=Gain Vdd=Vdd 
+end Hittite_HMC287MS8_cktName 

@@ -1,0 +1,7 @@
+set_simulator_type(1);
+set_design_type(analogRFnet);
+decl Hittite_HMC_C012_SPCompNetlistFmt = " ";
+decl Hittite_HMC_C012_net=" ";
+Hittite_HMC_C012_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC_C012_cktName.net");
+Hittite_HMC_C012_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC_C012_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+create_item("Hittite_HMC_C012" ,"10 WATT POWER AMPLIFIER MODULE  400-1000 MHz","SNP",NULL,NULL,NULL,standard_dialog," ",Hittite_HMC_C012_SPCompNetlistFmt,"Hittite_HMC_C012_cktName",ComponentAnnotFmt,"SYM_Amplifier",no_artwork,NULL,ITEM_PRIMITIVE_EX,create_parm("Temp","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",TEMPERATURE_UNIT,prm("StdForm", "25")),create_parm("Gain","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",DB_GAIN_UNIT,prm("StdForm", "40 dB")),create_parm("RF_Range","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",FREQUENCY_UNIT,prm("StdForm", "400-1000 MHz")),create_parm("File","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",STRING_UNIT,prm("StdForm", "\"HMC-C012_sparameters.s2p\"")));

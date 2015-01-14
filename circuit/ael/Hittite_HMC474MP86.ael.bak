@@ -1,0 +1,52 @@
+set_simulator_type(1); 
+set_design_type(analogRFnet); 
+
+decl Hittite_HMC474MP86_SPCompNetlistFmt = " "; 
+decl Hittite_HMC474MP86_net=" "; 
+Hittite_HMC474MP86_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC474MP86_cktName.net");
+Hittite_HMC474MP86_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC474MP86_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+
+create_item("Hittite_HMC474MP86" , 	 //Component name 
+	     "SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-6.0 GHz", 	 //Description 
+	     "SNP", 	 //Instance Prefix 
+	     NULL, 	 //attribute 
+	     NULL, 	 //priority 
+	     NULL, 	 //iconName 
+	     standard_dialog, 	 //dialogCode 
+	     " ", 	 //dialogData 
+	     Hittite_HMC474MP86_SPCompNetlistFmt, 	 //netlistFormat 
+	     "Hittite_HMC474MP86_cktName", 	 //netlistData 
+	     ComponentAnnotFmt, 	 //displayFormat 
+	     "Amp_Symbol_1_3", 	 //symbolName 
+	     fixed_artwork, //artworkType
+	     "mp86_107902", 	 //artworkData 
+	     ITEM_PRIMITIVE_EX 	 //extraAttribute 
+	     ,create_parm("Temp", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        TEMPERATURE_UNIT,
+		        prm("StdForm", "25")
+	     )
+	     ,create_parm("Gain", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        DB_GAIN_UNIT,
+		        prm("StdForm", "15.5 dB")
+	     )
+	     ,create_parm("RF_Range", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        FREQUENCY_UNIT,
+		        prm("StdForm", "0-6.0 GHz")
+	     )
+	     ,create_parm("File", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "string", 	 //formset 
+		        STRING_UNIT,
+		        prm("string", "hmc474mp86_deembedded.s2p")
+	     )
+);

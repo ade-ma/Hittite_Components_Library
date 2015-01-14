@@ -1,0 +1,163 @@
+set_simulator_type(1); 
+set_design_type(analogRFnet); 
+
+
+/*---------global variables------------------*/
+
+decl type_default = "RF1 Selected"; 
+
+/*---------forms and formset------------------*/
+
+create_constant_form("RF1 Selected", "RF1 Selected", 0, " ", "RF1 Selected");
+create_constant_form("RF2 Selected", "RF2 Selected", 0, " ", "RF2 Selected");
+create_constant_form("RF3 Selected", "RF3 Selected", 0, " ", "RF3 Selected");
+create_constant_form("RF4 Selected", "RF4 Selected", 0, " ", "RF4 Selected");
+create_constant_form("RF5 Selected", "RF5 Selected", 0, " ", "RF5 Selected");
+create_constant_form("RF6 Selected", "RF6 Selected", 0, " ", "RF6 Selected");
+create_constant_form("RF7 Selected", "RF7 Selected", 0, " ", "RF7 Selected");
+create_constant_form("RF8 Selected", "RF8 Selected", 0, " ", "RF8 Selected");
+
+create_form_set("formset_type", "RF1 Selected", "RF2 Selected", "RF3 Selected", "RF4 Selected"
+	, "RF5 Selected", "RF6 Selected", "RF7 Selected"
+	, "RF8 Selected");
+
+
+/*-------modified value parameter callback function--------*/
+defun Hittite_HMC253QS24_parm_modifiedValue_cb 
+(
+ cbP, 
+ parmName, 
+ itemInfoP 
+) 
+{ 
+  decl parmList = NULL; 
+  decl type; 
+  type = pcb_get_form_value(itemInfoP, "Type");
+ 
+ if(parmName == "Type")
+  {
+    if(type == "RF1 Selected")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"HMC253QS24_rf1_selected_deembedded.s9p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "RF_Range", "0-2.5 GHz");
+    } 
+    else if(type == "RF2 Selected")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"HMC253QS24_rf2_selected_deembedded.s9p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "RF_Range", "0-2.5 GHz");
+    } 
+    else if(type == "RF3 Selected")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"HMC253QS24_rf3_selected_deembedded.s9p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "RF_Range", "0-2.5 GHz");
+    } 
+    else if(type == "RF4 Selected")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"HMC253QS24_rf4_selected_deembedded.s9p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "RF_Range", "0-2.5 GHz");
+    } 
+    else if(type == "RF5 Selected")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"HMC253QS24_rf5_selected_deembedded.s9p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "RF_Range", "0-2.5 GHz");
+    } 
+    else if(type == "RF6 Selected")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"HMC253QS24_rf6_selected_deembedded.s9p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "RF_Range", "0-2.5 GHz");
+    } 
+    else if(type == "RF7 Selected")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"HMC253QS24_rf7_selected_deembedded.s9p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "RF_Range", "0-2.5 GHz");
+    } 
+    else if(type == "RF8 Selected")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"HMC253QS24_rf8_selected_deembedded.s9p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "RF_Range", "0-2.5 GHz");
+    } 
+  }
+  return(parmList);
+}
+
+decl Hittite_HMC253QS24_SPCompNetlistFmt = " "; 
+decl Hittite_HMC253QS24_net=" "; 
+Hittite_HMC253QS24_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC253QS24_cktName.net");
+Hittite_HMC253QS24_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC253QS24_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+
+create_item("Hittite_HMC253QS24" , 	 //Component name 
+	     "GaAs MMIC SP8T Non-Reflective Switch DC- 2.5 GHz", 	 //Description 
+	     "SNP", 	 //Instance Prefix 
+	     NULL, 	 //attribute 
+	     NULL, 	 //priority 
+	     NULL, 	 //iconName 
+	     standard_dialog, 	 //dialogCode 
+	     " ", 	 //dialogData 
+	     Hittite_HMC253QS24_SPCompNetlistFmt, 	 //netlistFormat 
+	     "Hittite_HMC253QS24_cktName", 	 //netlistData 
+	     ComponentAnnotFmt, 	 //displayFormat 
+	     "Sym_9_Port_QS24_Switch", 	 //symbolName 
+	     fixed_artwork, //artworkType
+	     "qs24_105599", 	 //artworkData 
+	     ITEM_PRIMITIVE_EX 	 //extraAttribute 
+	     ,create_parm("File", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        STRING_UNIT,
+		        prm("StdForm", "\"HMC253QS24_rf1_selected_deembedded.s9p\"")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC253QS24_parm_modifiedValue_cb", 	 // function name 
+						  "File", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Temp", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        TEMPERATURE_UNIT,
+		        prm("StdForm", "25")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC253QS24_parm_modifiedValue_cb", 	 // function name 
+						  "Temp", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("RF_Range", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        FREQUENCY_UNIT,
+		        prm("StdForm", "0-2.5 GHz")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC253QS24_parm_modifiedValue_cb", 	 // function name 
+						  "RF_Range", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Type", 	 //Param name 
+		        "Component type",	 //Param Desc 
+		        PARM_NOT_NETLISTED | PARM_DISCRETE_VALUE,
+		        "formset_type", 	 //formset 
+		        UNITLESS_UNIT,
+		        prm(type_default)		 //defaultValue 
+ 			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC253QS24_parm_modifiedValue_cb", 	 // function name 
+						  "Type", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+);

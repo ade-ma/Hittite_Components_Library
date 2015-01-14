@@ -1,0 +1,66 @@
+set_simulator_type(1); 
+set_design_type(analogRFnet); 
+
+decl Hittite_HMC283LM1_SPCompNetlistFmt = " "; 
+decl Hittite_HMC283LM1_net=" "; 
+Hittite_HMC283LM1_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC283LM1_cktName.net");
+Hittite_HMC283LM1_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC283LM1_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+
+create_item("Hittite_HMC283LM1" , 	 //Component name 
+	     "SMT MEDIUM POWER GaAs MMIC AMPLIFIER 17-40 GHz", 	 //Description 
+	     "SNP", 	 //Instance Prefix 
+	     NULL, 	 //attribute 
+	     NULL, 	 //priority 
+	     NULL, 	 //iconName 
+	     standard_dialog, 	 //dialogCode 
+	     " ", 	 //dialogData 
+	     Hittite_HMC283LM1_SPCompNetlistFmt, 	 //netlistFormat 
+	     "Hittite_HMC283LM1_cktName", 	 //netlistData 
+	     ComponentAnnotFmt, 	 //displayFormat 
+	     "Amp_Symbol_8_4", 	 //symbolName 
+	     fixed_artwork, //artworkType
+	     "lm1_106285", 	 //artworkData 
+	     ITEM_PRIMITIVE_EX 	 //extraAttribute 
+	     ,create_parm("Temp", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        TEMPERATURE_UNIT,
+		        prm("StdForm", "25")
+	     )
+	     ,create_parm("Vdd", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        VOLTAGE_UNIT,
+		        prm("StdForm", "3.5 V")
+	     )
+	     ,create_parm("Id", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        CURRENT_UNIT,
+		        prm("StdForm", "300 mA")
+	     )
+	     ,create_parm("Gain", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        DB_GAIN_UNIT,
+		        prm("StdForm", "21 dB")
+	     )
+	     ,create_parm("RF_Range", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        FREQUENCY_UNIT,
+		        prm("StdForm", "17-40 GHz")
+	     )
+	     ,create_parm("File", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        STRING_UNIT,
+		        prm("StdForm", "\"HMC283LM1_deembedded.s2p\"")
+	     )
+);

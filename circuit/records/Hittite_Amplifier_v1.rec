@@ -1,0 +1,883 @@
+<?xml version="1.0" ?> 
+<COMPONENTS>
+ <COMPONENT>
+  <NAME>Hittite_HMC283</NAME>
+  <DESCRIPTION>GaAs MMIC MEDIUM POWER AMPLIFIER  17-40 Ghz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC283LM1</NAME>
+  <DESCRIPTION>SMT MEDIUM POWER GaAs MMIC AMPLIFIER 17-40 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC286</NAME>
+  <DESCRIPTION>GaAs MMIC LOW NOISE AMPLIFIER  2.3-2.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC287MS8</NAME>
+  <DESCRIPTION>GaAs MMIC LOW NOISE AMPLIFIER with AGC 2.3 - 2.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC300LM1</NAME>
+  <DESCRIPTION>SMT MEDIUM POWER GaAs MMIC AMPLIFIER  25.5-33.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC308</NAME>
+  <DESCRIPTION>GENERAL PURPOSE 100 mW GaAs MMIC AMPLIFIER 0.8 - 3.8 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC310MS8G</NAME>
+  <DESCRIPTION>BLUETOOTH 2.4 GHz WLAN GaAs MMIC TRANSCEIVER</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC311LP3</NAME>
+  <DESCRIPTION>InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-6.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC313</NAME>
+  <DESCRIPTION>GaAs InGaP HBT MMIC BROADBAND AMPLIFIER GAIN BLOCK  DC-6.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC314</NAME>
+  <DESCRIPTION>GaAs InGaP HBT MMIC DRIVER AMPLIFIER  0.7-4.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC315</NAME>
+  <DESCRIPTION>GaAs InGaP HBT MMIC DARLINGTON AMPLIFIER DC - 7.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC318MS8G</NAME>
+  <DESCRIPTION>GaAs MMIC LOW NOISE AMPLIFIER with AGC 5.0 - 6.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC320MS8G</NAME>
+  <DESCRIPTION>GaAs MMIC LOW NOISE AMPLIFIER  5.0 - 6.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC326MS8G</NAME>
+  <DESCRIPTION>GaAs InGaP HBT MMIC DRIVER AMPLIFIER  3.0-4.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC327MS8G</NAME>
+  <DESCRIPTION>GaAs InGaP HBT MMIC POWER AMPLIFIER  3.0-4.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC341</NAME>
+  <DESCRIPTION>GaAs MMIC LOW NOISE AMPLIFIER  24-30 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC341LC3B</NAME>
+  <DESCRIPTION>SMT GaAs PHEMT MMIC LOW NOISE AMPLIFIER  21-29 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC342</NAME>
+  <DESCRIPTION>GaAs MMIC LOW NOISE AMPLIFIER  13-25 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC342LC4</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER  13-25 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC356LP3</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER  350-550 MHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC372LP3</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER  700-1000 MHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC373LP3</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER w BYPASS MODE 700 - 1000 MHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC374</NAME>
+  <DESCRIPTION>SMT PHEMT LOW NOISE AMPLIFIER  0.3-3.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC375LP3</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER  1.7-2.2 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC376LP3</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER  700-1000 MHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC382LP3</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER  1.7-2.2 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC383</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER 12 - 30 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC383LC4</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  12-30 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC392</NAME>
+  <DESCRIPTION>GaAs MMIC LOW NOISE AMPLIFIER  3.5-7.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC395</NAME>
+  <DESCRIPTION>InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-4.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC396</NAME>
+  <DESCRIPTION>InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-8.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC397</NAME>
+  <DESCRIPTION>InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-10.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC405</NAME>
+  <DESCRIPTION>InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-10.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC406MS8G</NAME>
+  <DESCRIPTION>GaAs InGaP HBT MMIC POWER AMPLIFIER  5.0-6.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC407MS8G</NAME>
+  <DESCRIPTION>GaAs InGaP HBT MMIC POWER AMPLIFIER  5.0-7.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC408LP3</NAME>
+  <DESCRIPTION>GaAs InGaP HBT MMIC 1 WATT POWER AMPLIFIER  5.1-5.9 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC413QS16G</NAME>
+  <DESCRIPTION>GaAs InGaP HBT MMIC POWER AMPLIFIER 1.6 - 2.2 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC414MS8G</NAME>
+  <DESCRIPTION>GaAs InGaP HBT MMIC POWER AMPLIFIER 2.2 - 2.8 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC415LP3</NAME>
+  <DESCRIPTION>GaAs InGaP HBT MMIC POWER AMPLIFIER  4.9-5.9 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC441</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  6.0-18.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC441LC3B</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  6-18 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC441LH5</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  7.0-15.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC441LM1</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  7.0-15.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC441LP3</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  6.5-13.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC442</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  17.5-25.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC442LM1</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC451</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER 5.0 - 20.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC451LC3</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  5-20 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC452QS16G</NAME>
+  <DESCRIPTION>InGaP HBT 1 WATT POWER AMPLIFIER  0.4-2.2 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC452ST89</NAME>
+  <DESCRIPTION>InGaP HBT 1 WATT POWER AMPLIFIER  0.4-2.2 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC453QS16G</NAME>
+  <DESCRIPTION>InGaP HBT 1.6 WATT POWER AMPLIFIER  0.4-2.2 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC453ST89</NAME>
+  <DESCRIPTION>InGaP HBT 1.6 WATT POWER AMPLIFIER  0.4-2.2 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC454ST89</NAME>
+  <DESCRIPTION>InGaP HBT 0.5 WATT HIGH IP3 AMPLIFIER  0.4-2.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC455LP3</NAME>
+  <DESCRIPTION>InGaP HBT 0.5 Watt High IP3 AMPLIFIER 1.7-2.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC457QS16G</NAME>
+  <DESCRIPTION>InGaP HBT 1 WATT POWER AMPLIFIER  1.7-2.2 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC460</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER  DC-20.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC461LP3</NAME>
+  <DESCRIPTION>InGaP HBT 1 Watt High IP3 AMPLIFIER  1.7-2.2 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC462</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER  2.0-20.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC462LP5</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER  2.0-20.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC463</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AGC AMPLIFIER  2.0-20.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC463LP5</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AGC AMPLIFIER  2.0-20.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC464</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC POWER AMPLIFIER  2.0-20.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC464LP5</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC POWER AMPLIFIER  2.0-20.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC465</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MODULATOR DRIVER AMPLIFIER  DC-20.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC465LP5</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MODULATOR DRIVER AMPLIFIER  DC-20.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC469MS8G</NAME>
+  <DESCRIPTION>SiGe HBT DUAL CHANNEL GAIN BLOCK MMIC AMPLIFIER DC - 5.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC471MS8G</NAME>
+  <DESCRIPTION>SiGe HBT DUAL CHANNEL GAIN BLOCK MMIC AMPLIFIER DC - 5.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC474MP86</NAME>
+  <DESCRIPTION>SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-6.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC476MP86</NAME>
+  <DESCRIPTION>SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-6.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC478MP86</NAME>
+  <DESCRIPTION>SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-4.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC478ST89</NAME>
+  <DESCRIPTION>SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-4.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC479MP86</NAME>
+  <DESCRIPTION>SiGe HBT Gain Block MMIC Amplifier DC-5.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC479ST89</NAME>
+  <DESCRIPTION>Hittite_HMC479ST89 SiGe HBT Gain Block  MMIC Amplifier DC -5.0   GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC480ST89</NAME>
+  <DESCRIPTION>InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-5.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC481MP86</NAME>
+  <DESCRIPTION>SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-5.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC481ST89</NAME>
+  <DESCRIPTION>SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-5.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC482ST89</NAME>
+  <DESCRIPTION>SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-5.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC486</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC 2 WATT POWER AMPLIFIER  7.0-9.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC486LP5</NAME>
+  <DESCRIPTION>SURFACE MOUNT PHEMT 2 WATT POWER AMPLIFIER  7-9 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC487LP5</NAME>
+  <DESCRIPTION>SURFACE MOUNT PHEMT 2 WATT POWER AMPLIFIER  9-12 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC489LP5</NAME>
+  <DESCRIPTION>SURFACE MOUNT PHEMT 1 WATT POWER AMPLIFIER  12-16 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC490</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE HIGH IP3 AMPLIFIER  12-17 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC490LP5</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE HIGH IP3 AMPLIFIER  12-16 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC491LP3</NAME>
+  <DESCRIPTION>GaAs MMIC LOW NOISE AMPLIFIER w BYPASS MODE 3.4 - 3.8 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC498</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC POWER AMPLIFIER  17-24 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC498LC4</NAME>
+  <DESCRIPTION>GaAs PHEMT MEDIUM POWER AMPLIFIER  17-24 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC499</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  21-32 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC499LC4</NAME>
+  <DESCRIPTION>SMT PHEMT MEDIUM POWER AMPLIFIER  21-32 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC516</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER 7 - 17 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC516LC5</NAME>
+  <DESCRIPTION>SMT PHEMT LOW NOISE AMPLIFIER  9-18 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC517</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER 17 - 26 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC518</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER 20 - 32 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC519</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER  18-32 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC559</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC POWER AMPLIFIER  DC-20.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC562</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC WIDEBAND DRIVER AMPLIFIER  2-35 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC564</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER  7-13.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC565</NAME>
+  <DESCRIPTION>GaAs PHEMT MMIC LOW NOISE AMPLIFIER  6-20 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C001</NAME>
+  <DESCRIPTION>WIDEBAND LNA MODULE 2-20 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C002</NAME>
+  <DESCRIPTION>WIDEBAND LNA MODULE 2-20 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C003</NAME>
+  <DESCRIPTION>WIDEBAND POWER AMPLIFIER MODULE  2-20 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C004</NAME>
+  <DESCRIPTION>WIDEBAND DRIVER AMPLIFIER MODULE 10 MHz - 20 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C008</NAME>
+  <DESCRIPTION>15 WATT POWER AMPLIFIER MODULE  1.8-2.2 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C012</NAME>
+  <DESCRIPTION>10 WATT POWER AMPLIFIER MODULE  400-1000 MHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C013</NAME>
+  <DESCRIPTION>10 WATT POWER AMPLIFIER MODULE  800-2000 MHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C016</NAME>
+  <DESCRIPTION>WIDEBAND LNA MODULE 7-17 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C017</NAME>
+  <DESCRIPTION>WIDEBAND LNA MODULE 17-27 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C022</NAME>
+  <DESCRIPTION>WIDEBAND LNA MODULE 2-20 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C023</NAME>
+  <DESCRIPTION>WIDEBAND POWER AMPLIFIER MODULE  2-20 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C024</NAME>
+  <DESCRIPTION>WIDEBAND DRIVER AMPLIFIER MODULE  10 MHz-20 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C026</NAME>
+  <DESCRIPTION>WIDEBAND DRIVER AMPLIFIER MODULE  2 GHz-20 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+</COMPONENTS>

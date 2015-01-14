@@ -1,0 +1,27 @@
+set_simulator_type(1);
+set_design_type(analogRFnet);
+decl type_default = "chan1";
+create_constant_form("chan1", "chan1", 0, " ", "chan1");
+create_constant_form("chan2", "chan2", 0, " ", "chan2");
+create_form_set("formset_type", "chan1", "chan2");
+defun Hittite_HMC471MS8G_parm_modifiedValue_cb(cbP,parmName,itemInfoP){decl parmList = NULL;
+decl type;
+type = pcb_get_form_value(itemInfoP, "Type");
+if(parmName == "Type"){if(type == "chan1"){parmList = pcb_set_string(parmList, "File", "\"Hmc471ms8g_chan1_deembedded.S2P\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "Gain", "20 dB");
+parmList = pcb_set_string(parmList, "RF_Range", "0.0-5.0 GHz");
+}
+else if(type == "chan2"){parmList = pcb_set_string(parmList, "File", "\"Hmc471ms8g_chan2_deembedded.S2P\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "Gain", "20 dB");
+parmList = pcb_set_string(parmList, "RF_Range", "0.0-5.0 GHz");
+}
+}
+return(parmList);
+}
+decl Hittite_HMC471MS8G_SPCompNetlistFmt = " ";
+decl Hittite_HMC471MS8G_net=" ";
+Hittite_HMC471MS8G_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC471MS8G_cktName.net");
+Hittite_HMC471MS8G_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC471MS8G_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+create_item("Hittite_HMC471MS8G" ,"SiGe HBT DUAL CHANNEL GAIN BLOCK MMIC AMPLIFIER DC - 5.0 GHz","SNP",NULL,NULL,NULL,standard_dialog," ",Hittite_HMC471MS8G_SPCompNetlistFmt,"Hittite_HMC471MS8G_cktName",ComponentAnnotFmt,"Amp_Symbol_1_8",fixed_artwork,"ms8g_105590",ITEM_PRIMITIVE_EX,create_parm("File","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",STRING_UNIT,prm("StdForm", "\"Hmc471ms8g_chan1_deembedded.S2P\""),list(dm_create_cb(PARM_MODIFIED_CB,"Hittite_HMC471MS8G_parm_modifiedValue_cb","File",TRUE))),create_parm("Temp","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",TEMPERATURE_UNIT,prm("StdForm", "25"),list(dm_create_cb(PARM_MODIFIED_CB,"Hittite_HMC471MS8G_parm_modifiedValue_cb","Temp",TRUE))),create_parm("Gain","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",DB_GAIN_UNIT,prm("StdForm", "20 dB"),list(dm_create_cb(PARM_MODIFIED_CB,"Hittite_HMC471MS8G_parm_modifiedValue_cb","Gain",TRUE))),create_parm("RF_Range","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",FREQUENCY_UNIT,prm("StdForm", "0.0-5.0 GHz"),list(dm_create_cb(PARM_MODIFIED_CB,"Hittite_HMC471MS8G_parm_modifiedValue_cb","RF_Range",TRUE))),create_parm("Type","Component type",PARM_NOT_NETLISTED | PARM_DISCRETE_VALUE,"formset_type",UNITLESS_UNIT,prm(type_default),list(dm_create_cb(PARM_MODIFIED_CB,"Hittite_HMC471MS8G_parm_modifiedValue_cb","Type",TRUE))));

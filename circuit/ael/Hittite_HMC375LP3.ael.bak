@@ -1,0 +1,52 @@
+set_simulator_type(1); 
+set_design_type(analogRFnet); 
+
+decl Hittite_HMC375LP3_SPCompNetlistFmt = " "; 
+decl Hittite_HMC375LP3_net=" "; 
+Hittite_HMC375LP3_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC375LP3_cktName.net");
+Hittite_HMC375LP3_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC375LP3_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+
+create_item("Hittite_HMC375LP3" , 	 //Component name 
+	     "GaAs PHEMT MMIC LOW NOISE AMPLIFIER  1.7-2.2 GHz", 	 //Description 
+	     "SNP", 	 //Instance Prefix 
+	     NULL, 	 //attribute 
+	     NULL, 	 //priority 
+	     NULL, 	 //iconName 
+	     standard_dialog, 	 //dialogCode 
+	     " ", 	 //dialogData 
+	     Hittite_HMC375LP3_SPCompNetlistFmt, 	 //netlistFormat 
+	     "Hittite_HMC375LP3_cktName", 	 //netlistData 
+	     ComponentAnnotFmt, 	 //displayFormat 
+	     "Amp_Symbol_2_11", 	 //symbolName 
+	     fixed_artwork, //artworkType
+	     "lp3_105347", 	 //artworkData 
+	     ITEM_PRIMITIVE_EX 	 //extraAttribute 
+	     ,create_parm("Temp", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        TEMPERATURE_UNIT,
+		        prm("StdForm", "25")
+	     )
+	     ,create_parm("Gain", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        DB_GAIN_UNIT,
+		        prm("StdForm", "17 dB")
+	     )
+	     ,create_parm("RF_Range", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        FREQUENCY_UNIT,
+		        prm("StdForm", "1.7-2.2 GHz")
+	     )
+	     ,create_parm("File", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "string", 	 //formset 
+		        STRING_UNIT,
+		        prm("string", "HMC375LP3_deembedded.s2p")
+	     )
+);

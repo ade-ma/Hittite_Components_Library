@@ -1,0 +1,6 @@
+# Library Defs for editing the Hittite_Components_Library design kit
+# Remove this from the design kit before distributing to customers.
+DEFINE Hittite_Components_Library_tech ./Hittite_Components_Library_tech
+ASSIGN Hittite_Components_Library_tech libMode shared
+DEFINE Hittite_Components_Library ./Hittite_Components_Library
+ASSIGN Hittite_Components_Library libMode shared

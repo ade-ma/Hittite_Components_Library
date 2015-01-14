@@ -1,0 +1,556 @@
+dk_define_palette_group(SCHEM_WIN, "analogRF_net",
+			 "Hittite_Switches", "Switches", 0,
+			 "Hittite_HMC154S8","GaAs MMIC SMT Low Distortion  T/R Switch DC-2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC154S8")
+			 ,"Hittite_HMC174MS8","GaAs MMIC T/R SWITCH DC - 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC174MS8")
+			 ,"Hittite_HMC182S14","GaAs MMIC SP4T Non-reflective Switch DC- 2.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"5PORT_SWITCH_Hittite_HMC182S14")
+			 ,"Hittite_HMC183QS24","GaAs MMIC SP8T Non-Reflective Switch DC :- 2.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"9PORT_SWITCH_Hittite_HMC183QS24")
+			 ,"Hittite_HMC190MS8","GaAs MMIC SPDT Switch DC : 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC190MS8")
+			 ,"Hittite_HMC194MS8","GaAs MMIC SPDT Switch DC : 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC194MS8")
+			 ,"Hittite_HMC195","GaAs MMIC SOT26 T/R Switch DC- 2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC195")
+			 ,"Hittite_HMC197","GaAs MMIC SOT26 SPDT Switch DC- 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC197")
+			 ,"Hittite_HMC199MS8","GaAs MMIC SOT26 SPDT Switch DC- 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"4PORT_SWITCH_Hittite_HMC199MS8")
+			 ,"Hittite_HMC221","GaAs MMIC SOT26 SPDT  Switch DC- 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC221")
+			 ,"Hittite_HMC224MS8","GaAs MMIC T/R SWITCH DC- 5.0-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC224MS8")
+			 ,"Hittite_HMC226","GaAs MMIC +3V SOT26 Transmit/ Recieve Switch DC- 0.0-2.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC226")
+			 ,"Hittite_HMC232","GaAs MMIC SPDT Non-Reflective  Switch DC- 15.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC232")
+			 ,"Hittite_HMC232C8","GaAs MMIC SPDT Non-Reflective  Switch DC- 8.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC232C8")
+			 ,"Hittite_HMC234C8","GaAs MMIC SMT HIGH Isolation SPDT Switch DC- 8.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC234C8")
+			 ,"Hittite_HMC240","GaAs MMIC SPDT SWITCH DC - 4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC240")
+			 ,"Hittite_HMC241LP3","GaAs MMIC SP4T Non-Reflective Switch DC- 4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"5PORT_SWITCH_Hittite_HMC241LP3")
+			 ,"Hittite_HMC241QS16","GaAs MMIC SP4T Non-Reflective Switch DC- 3.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"5PORT_SWITCH_Hittite_HMC241QS16")
+			 ,"Hittite_HMC244G16","GaAs MMIC SP4T Non-Reflective Switch DC- 4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"5PORT_SWITCH_Hittite_HMC244G16")
+			 ,"Hittite_HMC245QS16","GaAs MMIC SP3T Non-Reflective Switch DC- 3.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"4PORT_SWITCH_Hittite_HMC245QS16")
+			 ,"Hittite_HMC252QS24","GaAs MMIC SP6T Non-Reflective Switch DC- 3.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"7PORT_SWITCH_Hittite_HMC252QS24")
+			 ,"Hittite_HMC253QS24","GaAs MMIC SP8T Non-Reflective Switch DC- 2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"9PORT_SWITCH_Hittite_HMC253QS24")
+			 ,"Hittite_HMC270MS8G","GaAs MMIC SPDT Non Reflective Switch  DC - 8.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC270MS8G")
+			 ,"Hittite_HMC276QS24","GaAs MMIC 4*2 Switch Matrix 0.7-3.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"6PORT_SWITCH_Hittite_HMC276QS24")
+			 ,"Hittite_HMC284MS8G","GaAs MMIC SPDT Non Reflective Switch  DC - 3.50 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC284MS8G")
+			 ,"Hittite_HMC321LP4","GaAs MMIC SP8T Non-Reflective Positive Control Switch DC- 8 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"9PORT_SWITCH_Hittite_HMC321LP4")
+			 ,"Hittite_HMC336MS8G","GaAs MMIC SPDT Non Reflective Poitive Control Switch  DC - 6 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC336MS8G")
+			 ,"Hittite_HMC344","GaAs MMIC SP4T Non-reflective Switch DC- 8.0GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"5PORT_SWITCH_Hittite_HMC344")
+			 ,"Hittite_HMC344LH5","GaAs MMIC SP4T Non-reflective Switch DC- 12 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"5PORT_SWITCH_Hittite_HMC344LH5")
+			 ,"Hittite_HMC344LP3","GaAs MMIC SP4T Non-reflective Switch DC- 8.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"5PORT_SWITCH_Hittite_HMC344LP3")
+			 ,"Hittite_HMC347","GaAs MMIC SPDT Non Reflective Switch  DC - 20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC347")
+			 ,"Hittite_HMC347C8","GaAs MMIC SMT High Isolation  SPDT Switch  DC - 8.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC347C8")
+			 ,"Hittite_HMC347LP3","GaAs MMIC SPDT Non Reflective Switch  DC - 14.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC347LP3")
+			 ,"Hittite_HMC348LP3","GaAs MMIC SPDT Non Reflective Switch  DC - 2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC348LP3")
+			 ,"Hittite_HMC349LP4C","High Isolation SPDT Non Reflective Switch  DC - 4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC349LP4C")
+			 ,"Hittite_HMC349MS8G","High Isolation SPDT Non Reflective Switch  DC - 4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC349MS8G")
+			 ,"Hittite_HMC393MS8G","GaAs MMIC DPDT Diversity Switch 5-6 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"4PORT_SWITCH_Hittite_HMC393MS8G")
+			 ,"Hittite_HMC427LP3","GaAs MMIC Positive Control Transfer Switch DC -8.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"4PORT_SWITCH_Hittite_HMC427LP3")
+			 ,"Hittite_HMC435MS8G","SPDT Non Reflective Switch  DC - 4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC435MS8G")
+			 ,"Hittite_HMC436MS8G","GaAs MMIC DPDT Diversity Or SP3T Switch 4.9-5.9 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"4PORT_SWITCH_Hittite_HMC436MS8G")
+			 ,"Hittite_HMC446","GaAs MMIC 10W T/R Switch 824-894 MHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC446")
+			 ,"Hittite_HMC484MS8G","GaAs MMIC 10W T/R Switch DC-3.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC484MS8G")
+			 ,"Hittite_HMC536MS8G","GaAs MMIC Positive Control T/R Switch DC-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC536MS8G")
+			 ,"Hittite_HMC544","GaAs MMIC  T/R Switch DC-4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC544")
+			 ,"Hittite_HMC545","GaAs MMIC  SPDT Switch DC-3.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC545")
+			 ,"Hittite_HMC547LP3","GaAs MMIC  SPDT Non Reflective Switch DC-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC547LP3")
+			 ,"Hittite_HMC574MS8","GaAs MMIC 5 Watt T/R Switch DC - 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC574MS8")
+			 ,"Hittite_HMC595","GaAs MMIC 3 Watt T/R Switch DC - 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC595")
+			 ,"Hittite_HMC_C011","GaAs MMIC SPDT Non Reflective Switch DC - 20 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC_C011")
+			 ,"Hittite_HMC_C019","High Isolation SPST Switch  Module  DC - 20 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"2PORT_SWITCH_Hittite_HMC_C019")
+			);
+dk_define_palette_group(LAYOUT_WIN, "analogRF_net",
+			 "Hittite_Switches", "Switches", 0,
+			 "Hittite_HMC154S8","GaAs MMIC SMT Low Distortion  T/R Switch DC-2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC154S8")
+			 ,"Hittite_HMC174MS8","GaAs MMIC T/R SWITCH DC - 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC174MS8")
+			 ,"Hittite_HMC182S14","GaAs MMIC SP4T Non-reflective Switch DC- 2.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"5PORT_SWITCH_Hittite_HMC182S14")
+			 ,"Hittite_HMC183QS24","GaAs MMIC SP8T Non-Reflective Switch DC :- 2.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"9PORT_SWITCH_Hittite_HMC183QS24")
+			 ,"Hittite_HMC190MS8","GaAs MMIC SPDT Switch DC : 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC190MS8")
+			 ,"Hittite_HMC194MS8","GaAs MMIC SPDT Switch DC : 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC194MS8")
+			 ,"Hittite_HMC195","GaAs MMIC SOT26 T/R Switch DC- 2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC195")
+			 ,"Hittite_HMC197","GaAs MMIC SOT26 SPDT Switch DC- 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC197")
+			 ,"Hittite_HMC199MS8","GaAs MMIC SOT26 SPDT Switch DC- 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"4PORT_SWITCH_Hittite_HMC199MS8")
+			 ,"Hittite_HMC221","GaAs MMIC SOT26 SPDT  Switch DC- 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC221")
+			 ,"Hittite_HMC224MS8","GaAs MMIC T/R SWITCH DC- 5.0-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC224MS8")
+			 ,"Hittite_HMC226","GaAs MMIC +3V SOT26 Transmit/ Recieve Switch DC- 0.0-2.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC226")
+			 ,"Hittite_HMC232C8","GaAs MMIC SPDT Non-Reflective  Switch DC- 8.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC232C8")
+			 ,"Hittite_HMC234C8","GaAs MMIC SMT HIGH Isolation SPDT Switch DC- 8.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC234C8")
+			 ,"Hittite_HMC241LP3","GaAs MMIC SP4T Non-Reflective Switch DC- 4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"5PORT_SWITCH_Hittite_HMC241LP3")
+			 ,"Hittite_HMC241QS16","GaAs MMIC SP4T Non-Reflective Switch DC- 3.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"5PORT_SWITCH_Hittite_HMC241QS16")
+			 ,"Hittite_HMC244G16","GaAs MMIC SP4T Non-Reflective Switch DC- 4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"5PORT_SWITCH_Hittite_HMC244G16")
+			 ,"Hittite_HMC245QS16","GaAs MMIC SP3T Non-Reflective Switch DC- 3.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"4PORT_SWITCH_Hittite_HMC245QS16")
+			 ,"Hittite_HMC252QS24","GaAs MMIC SP6T Non-Reflective Switch DC- 3.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"7PORT_SWITCH_Hittite_HMC252QS24")
+			 ,"Hittite_HMC253QS24","GaAs MMIC SP8T Non-Reflective Switch DC- 2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"9PORT_SWITCH_Hittite_HMC253QS24")
+			 ,"Hittite_HMC270MS8G","GaAs MMIC SPDT Non Reflective Switch  DC - 8.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC270MS8G")
+			 ,"Hittite_HMC276QS24","GaAs MMIC 4*2 Switch Matrix 0.7-3.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"6PORT_SWITCH_Hittite_HMC276QS24")
+			 ,"Hittite_HMC284MS8G","GaAs MMIC SPDT Non Reflective Switch  DC - 3.50 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC284MS8G")
+			 ,"Hittite_HMC321LP4","GaAs MMIC SP8T Non-Reflective Positive Control Switch DC- 8 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"9PORT_SWITCH_Hittite_HMC321LP4")
+			 ,"Hittite_HMC336MS8G","GaAs MMIC SPDT Non Reflective Poitive Control Switch  DC - 6 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC336MS8G")
+			 ,"Hittite_HMC344LH5","GaAs MMIC SP4T Non-reflective Switch DC- 12 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"5PORT_SWITCH_Hittite_HMC344LH5")
+			 ,"Hittite_HMC344LP3","GaAs MMIC SP4T Non-reflective Switch DC- 8.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"5PORT_SWITCH_Hittite_HMC344LP3")
+			 ,"Hittite_HMC347C8","GaAs MMIC SMT High Isolation  SPDT Switch  DC - 8.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC347C8")
+			 ,"Hittite_HMC347LP3","GaAs MMIC SPDT Non Reflective Switch  DC - 14.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC347LP3")
+			 ,"Hittite_HMC348LP3","GaAs MMIC SPDT Non Reflective Switch  DC - 2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC348LP3")
+			 ,"Hittite_HMC349LP4C","High Isolation SPDT Non Reflective Switch  DC - 4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC349LP4C")
+			 ,"Hittite_HMC349MS8G","High Isolation SPDT Non Reflective Switch  DC - 4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC349MS8G")
+			 ,"Hittite_HMC393MS8G","GaAs MMIC DPDT Diversity Switch 5-6 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"4PORT_SWITCH_Hittite_HMC393MS8G")
+			 ,"Hittite_HMC427LP3","GaAs MMIC Positive Control Transfer Switch DC -8.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"4PORT_SWITCH_Hittite_HMC427LP3")
+			 ,"Hittite_HMC435MS8G","SPDT Non Reflective Switch  DC - 4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC435MS8G")
+			 ,"Hittite_HMC436MS8G","GaAs MMIC DPDT Diversity Or SP3T Switch 4.9-5.9 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"4PORT_SWITCH_Hittite_HMC436MS8G")
+			 ,"Hittite_HMC446","GaAs MMIC 10W T/R Switch 824-894 MHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC446")
+			 ,"Hittite_HMC484MS8G","GaAs MMIC 10W T/R Switch DC-3.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC484MS8G")
+			 ,"Hittite_HMC536MS8G","GaAs MMIC Positive Control T/R Switch DC-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC536MS8G")
+			 ,"Hittite_HMC544","GaAs MMIC  T/R Switch DC-4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC544")
+			 ,"Hittite_HMC545","GaAs MMIC  SPDT Switch DC-3.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC545")
+			 ,"Hittite_HMC547LP3","GaAs MMIC  SPDT Non Reflective Switch DC-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC547LP3")
+			 ,"Hittite_HMC574MS8","GaAs MMIC 5 Watt T/R Switch DC - 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC574MS8")
+			 ,"Hittite_HMC595","GaAs MMIC 3 Watt T/R Switch DC - 3 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"3PORT_SWITCH_Hittite_HMC595")
+			);
+dk_define_palette_group(SCHEM_WIN, "analogRF_net",
+			 "Hittite_Amplifiers", "Amplifiers", 0,
+			 "Hittite_HMC283","GaAs MMIC MEDIUM POWER AMPLIFIER  17-40 Ghz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC283")
+			 ,"Hittite_HMC283LM1","SMT MEDIUM POWER GaAs MMIC AMPLIFIER 17-40 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC283LM1")
+			 ,"Hittite_HMC286","GaAs MMIC LOW NOISE AMPLIFIER  2.3-2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC286")
+			 ,"Hittite_HMC287MS8","GaAs MMIC LOW NOISE AMPLIFIER with AGC 2.3 - 2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC287MS8")
+			 ,"Hittite_HMC300LM1","SMT MEDIUM POWER GaAs MMIC AMPLIFIER  25.5-33.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC300LM1")
+			 ,"Hittite_HMC308","GENERAL PURPOSE 100 mW GaAs MMIC AMPLIFIER 0.8 - 3.8 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC308")
+			 ,"Hittite_HMC310MS8G","BLUETOOTH 2.4 GHz WLAN GaAs MMIC TRANSCEIVER", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC310MS8G")
+			 ,"Hittite_HMC311LP3","InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC311LP3")
+			 ,"Hittite_HMC313","GaAs InGaP HBT MMIC BROADBAND AMPLIFIER GAIN BLOCK  DC-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC313")
+			 ,"Hittite_HMC314","GaAs InGaP HBT MMIC DRIVER AMPLIFIER  0.7-4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC314")
+			 ,"Hittite_HMC315","GaAs InGaP HBT MMIC DARLINGTON AMPLIFIER DC - 7.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC315")
+			 ,"Hittite_HMC318MS8G","GaAs MMIC LOW NOISE AMPLIFIER with AGC 5.0 - 6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC318MS8G")
+			 ,"Hittite_HMC320MS8G","GaAs MMIC LOW NOISE AMPLIFIER  5.0 - 6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC320MS8G")
+			 ,"Hittite_HMC326MS8G","GaAs InGaP HBT MMIC DRIVER AMPLIFIER  3.0-4.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC326MS8G")
+			 ,"Hittite_HMC327MS8G","GaAs InGaP HBT MMIC POWER AMPLIFIER  3.0-4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC327MS8G")
+			 ,"Hittite_HMC341","GaAs MMIC LOW NOISE AMPLIFIER  24-30 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC341")
+			 ,"Hittite_HMC341LC3B","SMT GaAs PHEMT MMIC LOW NOISE AMPLIFIER  21-29 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC341LC3B")
+			 ,"Hittite_HMC342","GaAs MMIC LOW NOISE AMPLIFIER  13-25 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC342")
+			 ,"Hittite_HMC342LC4","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  13-25 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC342LC4")
+			 ,"Hittite_HMC356LP3","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  350-550 MHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC356LP3")
+			 ,"Hittite_HMC372LP3","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  700-1000 MHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC372LP3")
+			 ,"Hittite_HMC373LP3","GaAs PHEMT MMIC LOW NOISE AMPLIFIER w BYPASS MODE 700 - 1000 MHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC373LP3")
+			 ,"Hittite_HMC374","SMT PHEMT LOW NOISE AMPLIFIER  0.3-3.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC374")
+			 ,"Hittite_HMC375LP3","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  1.7-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC375LP3")
+			 ,"Hittite_HMC376LP3","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  700-1000 MHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC376LP3")
+			 ,"Hittite_HMC382LP3","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  1.7-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC382LP3")
+			 ,"Hittite_HMC383","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER 12 - 30 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC383")
+			 ,"Hittite_HMC383LC4","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  12-30 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC383LC4")
+			 ,"Hittite_HMC392","GaAs MMIC LOW NOISE AMPLIFIER  3.5-7.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC392")
+			 ,"Hittite_HMC395","InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC395")
+			 ,"Hittite_HMC396","InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-8.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC396")
+			 ,"Hittite_HMC397","InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-10.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC397")
+			 ,"Hittite_HMC405","InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-10.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC405")
+			 ,"Hittite_HMC406MS8G","GaAs InGaP HBT MMIC POWER AMPLIFIER  5.0-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC406MS8G")
+			 ,"Hittite_HMC407MS8G","GaAs InGaP HBT MMIC POWER AMPLIFIER  5.0-7.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC407MS8G")
+			 ,"Hittite_HMC408LP3","GaAs InGaP HBT MMIC 1 WATT POWER AMPLIFIER  5.1-5.9 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC408LP3")
+			 ,"Hittite_HMC413QS16G","GaAs InGaP HBT MMIC POWER AMPLIFIER 1.6 - 2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC413QS16G")
+			 ,"Hittite_HMC414MS8G","GaAs InGaP HBT MMIC POWER AMPLIFIER 2.2 - 2.8 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC414MS8G")
+			 ,"Hittite_HMC415LP3","GaAs InGaP HBT MMIC POWER AMPLIFIER  4.9-5.9 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC415LP3")
+			 ,"Hittite_HMC441","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  6.0-18.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC441")
+			 ,"Hittite_HMC441LC3B","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  6-18 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC441LC3B")
+			 ,"Hittite_HMC441LH5","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  7.0-15.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC441LH5")
+			 ,"Hittite_HMC441LM1","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  7.0-15.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC441LM1")
+			 ,"Hittite_HMC441LP3","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  6.5-13.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC441LP3")
+			 ,"Hittite_HMC442","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  17.5-25.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC442")
+			 ,"Hittite_HMC442LM1","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC442LM1")
+			 ,"Hittite_HMC451","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER 5.0 - 20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC451")
+			 ,"Hittite_HMC451LC3","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  5-20 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC451LC3")
+			 ,"Hittite_HMC452QS16G","InGaP HBT 1 WATT POWER AMPLIFIER  0.4-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC452QS16G")
+			 ,"Hittite_HMC452ST89","InGaP HBT 1 WATT POWER AMPLIFIER  0.4-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC452ST89")
+			 ,"Hittite_HMC453QS16G","InGaP HBT 1.6 WATT POWER AMPLIFIER  0.4-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC453QS16G")
+			 ,"Hittite_HMC453ST89","InGaP HBT 1.6 WATT POWER AMPLIFIER  0.4-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC453ST89")
+			 ,"Hittite_HMC454ST89","InGaP HBT 0.5 WATT HIGH IP3 AMPLIFIER  0.4-2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC454ST89")
+			 ,"Hittite_HMC455LP3","InGaP HBT 0.5 Watt High IP3 AMPLIFIER 1.7-2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC455LP3")
+			 ,"Hittite_HMC457QS16G","InGaP HBT 1 WATT POWER AMPLIFIER  1.7-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC457QS16G")
+			 ,"Hittite_HMC460","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  DC-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC460")
+			 ,"Hittite_HMC461LP3","InGaP HBT 1 Watt High IP3 AMPLIFIER  1.7-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC461LP3")
+			 ,"Hittite_HMC462","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  2.0-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC462")
+			 ,"Hittite_HMC462LP5","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  2.0-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC462LP5")
+			 ,"Hittite_HMC463","GaAs PHEMT MMIC LOW NOISE AGC AMPLIFIER  2.0-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC463")
+			 ,"Hittite_HMC463LP5","GaAs PHEMT MMIC LOW NOISE AGC AMPLIFIER  2.0-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC463LP5")
+			 ,"Hittite_HMC464","GaAs PHEMT MMIC POWER AMPLIFIER  2.0-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC464")
+			 ,"Hittite_HMC464LP5","GaAs PHEMT MMIC POWER AMPLIFIER  2.0-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC464LP5")
+			 ,"Hittite_HMC465","GaAs PHEMT MMIC MODULATOR DRIVER AMPLIFIER  DC-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC465")
+			 ,"Hittite_HMC465LP5","GaAs PHEMT MMIC MODULATOR DRIVER AMPLIFIER  DC-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC465LP5")
+			 ,"Hittite_HMC469MS8G","SiGe HBT DUAL CHANNEL GAIN BLOCK MMIC AMPLIFIER DC - 5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC469MS8G")
+			 ,"Hittite_HMC471MS8G","SiGe HBT DUAL CHANNEL GAIN BLOCK MMIC AMPLIFIER DC - 5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC471MS8G")
+			 ,"Hittite_HMC474MP86","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC474MP86")
+			 ,"Hittite_HMC476MP86","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC476MP86")
+			 ,"Hittite_HMC478MP86","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC478MP86")
+			 ,"Hittite_HMC478ST89","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC478ST89")
+			 ,"Hittite_HMC479MP86","Hittite_HMC479MP86 SiGe HBT Gain Block MMIC Amplifier DC-5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC479MP86")
+			 ,"Hittite_HMC479ST89","Hittite_HMC479ST89 SiGe HBT Gain Block  MMIC Amplifier DC -5.0   GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC479ST89")
+			 ,"Hittite_HMC480ST89","InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC480ST89")
+			 ,"Hittite_HMC481MP86","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC481MP86")
+			 ,"Hittite_HMC481ST89","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC481ST89")
+			 ,"Hittite_HMC482ST89","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC482ST89")
+			 ,"Hittite_HMC486","GaAs PHEMT MMIC 2 WATT POWER AMPLIFIER  7.0-9.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC486")
+			 ,"Hittite_HMC486LP5","SURFACE MOUNT PHEMT 2 WATT POWER AMPLIFIER  7-9 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC486LP5")
+			 ,"Hittite_HMC487LP5","SURFACE MOUNT PHEMT 2 WATT POWER AMPLIFIER  9-12 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC487LP5")
+			 ,"Hittite_HMC489LP5","SURFACE MOUNT PHEMT 1 WATT POWER AMPLIFIER  12-16 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC489LP5")
+			 ,"Hittite_HMC490","GaAs PHEMT MMIC LOW NOISE HIGH IP3 AMPLIFIER  12-17 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC490")
+			 ,"Hittite_HMC490LP5","GaAs PHEMT MMIC LOW NOISE HIGH IP3 AMPLIFIER  12-16 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC490LP5")
+			 ,"Hittite_HMC491LP3","GaAs MMIC LOW NOISE AMPLIFIER w BYPASS MODE 3.4 - 3.8 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC491LP3")
+			 ,"Hittite_HMC498","GaAs PHEMT MMIC POWER AMPLIFIER  17-24 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC498")
+			 ,"Hittite_HMC498LC4","GaAs PHEMT MEDIUM POWER AMPLIFIER  17-24 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC498LC4")
+			 ,"Hittite_HMC499","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  21-32 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC499")
+			 ,"Hittite_HMC499LC4","SMT PHEMT MEDIUM POWER AMPLIFIER  21-32 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC499LC4")
+			 ,"Hittite_HMC516","GaAs PHEMT MMIC LOW NOISE AMPLIFIER 7 - 17 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC516")
+			 ,"Hittite_HMC516LC5","SMT PHEMT LOW NOISE AMPLIFIER  9-18 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC516LC5")
+			 ,"Hittite_HMC517","GaAs PHEMT MMIC LOW NOISE AMPLIFIER 17 - 26 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC517")
+			 ,"Hittite_HMC518","GaAs PHEMT MMIC LOW NOISE AMPLIFIER 20 - 32 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC518")
+			 ,"Hittite_HMC519","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  18-32 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC519")
+			 ,"Hittite_HMC559","GaAs PHEMT MMIC POWER AMPLIFIER  DC-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC559")
+			 ,"Hittite_HMC562","GaAs PHEMT MMIC WIDEBAND DRIVER AMPLIFIER  2-35 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC562")
+			 ,"Hittite_HMC564","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  7-13.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC564")
+			 ,"Hittite_HMC565","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  6-20 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC565")
+			 ,"Hittite_HMC_C001","WIDEBAND LNA MODULE 2-20 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC_C001")
+			 ,"Hittite_HMC_C002","WIDEBAND LNA MODULE 2-20 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC_C002")
+			 ,"Hittite_HMC_C003","WIDEBAND POWER AMPLIFIER MODULE  2-20 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC_C003")
+			 ,"Hittite_HMC_C004","WIDEBAND DRIVER AMPLIFIER MODULE 10 MHz - 20 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC_C004")
+			 ,"Hittite_HMC_C008","15 WATT POWER AMPLIFIER MODULE  1.8-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC_C008")
+			 ,"Hittite_HMC_C012","10 WATT POWER AMPLIFIER MODULE  400-1000 MHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC_C012")
+			 ,"Hittite_HMC_C013","10 WATT POWER AMPLIFIER MODULE  800-2000 MHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC_C013")
+			 ,"Hittite_HMC_C016","WIDEBAND LNA MODULE 7-17 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC_C016")
+			 ,"Hittite_HMC_C017","WIDEBAND LNA MODULE 17-27 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC_C017")
+			 ,"Hittite_HMC_C022","WIDEBAND LNA MODULE 2-20 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC_C022")
+			 ,"Hittite_HMC_C023","WIDEBAND POWER AMPLIFIER MODULE  2-20 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC_C023")
+			 ,"Hittite_HMC_C024","WIDEBAND DRIVER AMPLIFIER MODULE  10 MHz-20 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC_C024")
+			 ,"Hittite_HMC_C026","WIDEBAND DRIVER AMPLIFIER MODULE  2 GHz-20 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC_C026")
+			);
+dk_define_palette_group(LAYOUT_WIN, "analogRF_net",
+			 "Hittite_Amplifiers", "Amplifiers", 0,
+			 "Hittite_HMC283LM1","SMT MEDIUM POWER GaAs MMIC AMPLIFIER 17-40 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC283LM1")
+			 ,"Hittite_HMC286","GaAs MMIC LOW NOISE AMPLIFIER  2.3-2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC286")
+			 ,"Hittite_HMC287MS8","GaAs MMIC LOW NOISE AMPLIFIER with AGC 2.3 - 2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC287MS8")
+			 ,"Hittite_HMC300LM1","SMT MEDIUM POWER GaAs MMIC AMPLIFIER  25.5-33.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC300LM1")
+			 ,"Hittite_HMC308","GENERAL PURPOSE 100 mW GaAs MMIC AMPLIFIER 0.8 - 3.8 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC308")
+			 ,"Hittite_HMC310MS8G","BLUETOOTH 2.4 GHz WLAN GaAs MMIC TRANSCEIVER", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC310MS8G")
+			 ,"Hittite_HMC311LP3","InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC311LP3")
+			 ,"Hittite_HMC313","GaAs InGaP HBT MMIC BROADBAND AMPLIFIER GAIN BLOCK  DC-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC313")
+			 ,"Hittite_HMC314","GaAs InGaP HBT MMIC DRIVER AMPLIFIER  0.7-4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC314")
+			 ,"Hittite_HMC315","GaAs InGaP HBT MMIC DARLINGTON AMPLIFIER DC - 7.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC315")
+			 ,"Hittite_HMC318MS8G","GaAs MMIC LOW NOISE AMPLIFIER with AGC 5.0 - 6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC318MS8G")
+			 ,"Hittite_HMC320MS8G","GaAs MMIC LOW NOISE AMPLIFIER  5.0 - 6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC320MS8G")
+			 ,"Hittite_HMC326MS8G","GaAs InGaP HBT MMIC DRIVER AMPLIFIER  3.0-4.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC326MS8G")
+			 ,"Hittite_HMC327MS8G","GaAs InGaP HBT MMIC POWER AMPLIFIER  3.0-4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC327MS8G")
+			 ,"Hittite_HMC341LC3B","SMT GaAs PHEMT MMIC LOW NOISE AMPLIFIER  21-29 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC341LC3B")
+			 ,"Hittite_HMC342LC4","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  13-25 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC342LC4")
+			 ,"Hittite_HMC356LP3","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  350-550 MHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC356LP3")
+			 ,"Hittite_HMC372LP3","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  700-1000 MHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC372LP3")
+			 ,"Hittite_HMC373LP3","GaAs PHEMT MMIC LOW NOISE AMPLIFIER w BYPASS MODE 700 - 1000 MHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC373LP3")
+			 ,"Hittite_HMC374","SMT PHEMT LOW NOISE AMPLIFIER  0.3-3.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC374")
+			 ,"Hittite_HMC375LP3","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  1.7-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC375LP3")
+			 ,"Hittite_HMC376LP3","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  700-1000 MHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC376LP3")
+			 ,"Hittite_HMC382LP3","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  1.7-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC382LP3")
+			 ,"Hittite_HMC383LC4","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  12-30 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC383LC4")
+			 ,"Hittite_HMC406MS8G","GaAs InGaP HBT MMIC POWER AMPLIFIER  5.0-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC406MS8G")
+			 ,"Hittite_HMC407MS8G","GaAs InGaP HBT MMIC POWER AMPLIFIER  5.0-7.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC407MS8G")
+			 ,"Hittite_HMC408LP3","GaAs InGaP HBT MMIC 1 WATT POWER AMPLIFIER  5.1-5.9 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC408LP3")
+			 ,"Hittite_HMC413QS16G","GaAs InGaP HBT MMIC POWER AMPLIFIER 1.6 - 2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC413QS16G")
+			 ,"Hittite_HMC414MS8G","GaAs InGaP HBT MMIC POWER AMPLIFIER 2.2 - 2.8 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC414MS8G")
+			 ,"Hittite_HMC415LP3","GaAs InGaP HBT MMIC POWER AMPLIFIER  4.9-5.9 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC415LP3")
+			 ,"Hittite_HMC441LC3B","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  6-18 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC441LC3B")
+			 ,"Hittite_HMC441LH5","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  7.0-15.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC441LH5")
+			 ,"Hittite_HMC441LM1","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  7.0-15.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC441LM1")
+			 ,"Hittite_HMC441LP3","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  6.5-13.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC441LP3")
+			 ,"Hittite_HMC442LM1","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC442LM1")
+			 ,"Hittite_HMC451LC3","GaAs PHEMT MMIC MEDIUM POWER AMPLIFIER  5-20 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC451LC3")
+			 ,"Hittite_HMC452QS16G","InGaP HBT 1 WATT POWER AMPLIFIER  0.4-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC452QS16G")
+			 ,"Hittite_HMC452ST89","InGaP HBT 1 WATT POWER AMPLIFIER  0.4-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC452ST89")
+			 ,"Hittite_HMC453QS16G","InGaP HBT 1.6 WATT POWER AMPLIFIER  0.4-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC453QS16G")
+			 ,"Hittite_HMC453ST89","InGaP HBT 1.6 WATT POWER AMPLIFIER  0.4-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC453ST89")
+			 ,"Hittite_HMC454ST89","InGaP HBT 0.5 WATT HIGH IP3 AMPLIFIER  0.4-2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC454ST89")
+			 ,"Hittite_HMC455LP3","InGaP HBT 0.5 Watt High IP3 AMPLIFIER 1.7-2.5 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC455LP3")
+			 ,"Hittite_HMC457QS16G","InGaP HBT 1 WATT POWER AMPLIFIER  1.7-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC457QS16G")
+			 ,"Hittite_HMC461LP3","InGaP HBT 1 Watt High IP3 AMPLIFIER  1.7-2.2 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC461LP3")
+			 ,"Hittite_HMC462LP5","GaAs PHEMT MMIC LOW NOISE AMPLIFIER  2.0-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC462LP5")
+			 ,"Hittite_HMC463LP5","GaAs PHEMT MMIC LOW NOISE AGC AMPLIFIER  2.0-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC463LP5")
+			 ,"Hittite_HMC464LP5","GaAs PHEMT MMIC POWER AMPLIFIER  2.0-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC464LP5")
+			 ,"Hittite_HMC465LP5","GaAs PHEMT MMIC MODULATOR DRIVER AMPLIFIER  DC-20.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC465LP5")
+			 ,"Hittite_HMC469MS8G","SiGe HBT DUAL CHANNEL GAIN BLOCK MMIC AMPLIFIER DC - 5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC469MS8G")
+			 ,"Hittite_HMC471MS8G","SiGe HBT DUAL CHANNEL GAIN BLOCK MMIC AMPLIFIER DC - 5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC471MS8G")
+			 ,"Hittite_HMC474MP86","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC474MP86")
+			 ,"Hittite_HMC476MP86","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-6.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC476MP86")
+			 ,"Hittite_HMC478MP86","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC478MP86")
+			 ,"Hittite_HMC478ST89","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-4.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC478ST89")
+			 ,"Hittite_HMC479MP86","Hittite_HMC479MP86 SiGe HBT Gain Block MMIC Amplifier DC-5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC479MP86")
+			 ,"Hittite_HMC479ST89","Hittite_HMC479ST89 SiGe HBT Gain Block  MMIC Amplifier DC -5.0   GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC479ST89")
+			 ,"Hittite_HMC480ST89","InGaP HBT GAIN BLOCK MMIC AMPLIFIER  DC-5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC480ST89")
+			 ,"Hittite_HMC481MP86","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC481MP86")
+			 ,"Hittite_HMC481ST89","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC481ST89")
+			 ,"Hittite_HMC482ST89","SiGe HBT GAIN BLOCK MMIC AMPLIFIER  DC-5.0 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC482ST89")
+			 ,"Hittite_HMC486LP5","SURFACE MOUNT PHEMT 2 WATT POWER AMPLIFIER  7-9 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC486LP5")
+			 ,"Hittite_HMC487LP5","SURFACE MOUNT PHEMT 2 WATT POWER AMPLIFIER  9-12 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC487LP5")
+			 ,"Hittite_HMC489LP5","SURFACE MOUNT PHEMT 1 WATT POWER AMPLIFIER  12-16 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC489LP5")
+			 ,"Hittite_HMC490LP5","GaAs PHEMT MMIC LOW NOISE HIGH IP3 AMPLIFIER  12-16 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC490LP5")
+			 ,"Hittite_HMC491LP3","GaAs MMIC LOW NOISE AMPLIFIER w BYPASS MODE 3.4 - 3.8 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC491LP3")
+			 ,"Hittite_HMC498LC4","GaAs PHEMT MEDIUM POWER AMPLIFIER  17-24 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC498LC4")
+			 ,"Hittite_HMC499LC4","SMT PHEMT MEDIUM POWER AMPLIFIER  21-32 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC499LC4")
+			 ,"Hittite_HMC516LC5","SMT PHEMT LOW NOISE AMPLIFIER  9-18 GHz", 
+			 strcat(Hittite_Components_Library_BITMAP_DIR,"Amplifier_Hittite_HMC516LC5")
+			);

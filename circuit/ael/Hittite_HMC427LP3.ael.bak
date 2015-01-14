@@ -1,0 +1,119 @@
+set_simulator_type(1); 
+set_design_type(analogRFnet); 
+
+
+/*---------global variables------------------*/
+
+decl type_default = "A High B Low"; 
+
+/*---------forms and formset------------------*/
+
+create_constant_form("A High B Low", "A High B Low", 0, " ", "A High B Low");
+create_constant_form("A Low B High", "A Low B High", 0, " ", "A Low B High");
+
+create_form_set("formset_type", "A High B Low", "A Low B High");
+
+
+/*-------modified value parameter callback function--------*/
+defun Hittite_HMC427LP3_parm_modifiedValue_cb 
+(
+ cbP, 
+ parmName, 
+ itemInfoP 
+) 
+{ 
+  decl parmList = NULL; 
+  decl type; 
+  type = pcb_get_form_value(itemInfoP, "Type");
+ 
+ if(parmName == "Type")
+  {
+    if(type == "A High B Low")
+    {
+      parmList = pcb_set_string(parmList, "File", "HMC427LP3_a_high_b_low_deembedded.s4p");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "RF_Range", "0-8 GHz");
+    } 
+    else if(type == "A Low B High")
+    {
+      parmList = pcb_set_string(parmList, "File", "HMC427LP3_a_low_b_high_deembedded.s4p");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "RF_Range", "0-8 GHz");
+    } 
+  }
+  return(parmList);
+}
+
+decl Hittite_HMC427LP3_SPCompNetlistFmt = " "; 
+decl Hittite_HMC427LP3_net=" "; 
+Hittite_HMC427LP3_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC427LP3_cktName.net");
+Hittite_HMC427LP3_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC427LP3_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+
+create_item("Hittite_HMC427LP3" , 	 //Component name 
+	     "GaAs MMIC Positive Control Transfer Switch DC -8.0 GHz", 	 //Description 
+	     "SNP", 	 //Instance Prefix 
+	     NULL, 	 //attribute 
+	     NULL, 	 //priority 
+	     NULL, 	 //iconName 
+	     standard_dialog, 	 //dialogCode 
+	     " ", 	 //dialogData 
+	     Hittite_HMC427LP3_SPCompNetlistFmt, 	 //netlistFormat 
+	     "Hittite_HMC427LP3_cktName", 	 //netlistData 
+	     ComponentAnnotFmt, 	 //displayFormat 
+	     "4Port_Switch", 	 //symbolName 
+	     fixed_artwork, //artworkType
+	     "lp3_105347", 	 //artworkData 
+	     ITEM_PRIMITIVE_EX 	 //extraAttribute 
+	     ,create_parm("File", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "string", 	 //formset 
+		        STRING_UNIT,
+		        prm("string", "HMC427LP3_a_high_b_low_deembedded.s4p")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC427LP3_parm_modifiedValue_cb", 	 // function name 
+						  "File", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Temp", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        TEMPERATURE_UNIT,
+		        prm("StdForm", "25")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC427LP3_parm_modifiedValue_cb", 	 // function name 
+						  "Temp", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("RF_Range", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        FREQUENCY_UNIT,
+		        prm("StdForm", "0-8 GHz")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC427LP3_parm_modifiedValue_cb", 	 // function name 
+						  "RF_Range", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Type", 	 //Param name 
+		        "Component type",	 //Param Desc 
+		        PARM_NOT_NETLISTED | PARM_DISCRETE_VALUE,
+		        "formset_type", 	 //formset 
+		        UNITLESS_UNIT,
+		        prm(type_default)		 //defaultValue 
+ 			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC427LP3_parm_modifiedValue_cb", 	 // function name 
+						  "Type", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+);

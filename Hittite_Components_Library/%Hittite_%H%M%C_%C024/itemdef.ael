@@ -1,0 +1,7 @@
+set_simulator_type(1);
+set_design_type(analogRFnet);
+decl Hittite_HMC_C024_SPCompNetlistFmt = " ";
+decl Hittite_HMC_C024_net=" ";
+Hittite_HMC_C024_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC_C024_cktName.net");
+Hittite_HMC_C024_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC_C024_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+create_item("Hittite_HMC_C024" ,"WIDEBAND DRIVER AMPLIFIER MODULE  10 MHz-20 GHz","SNP",NULL,NULL,NULL,standard_dialog," ",Hittite_HMC_C024_SPCompNetlistFmt,"Hittite_HMC_C024_cktName",ComponentAnnotFmt,"SYM_Amplifier",no_artwork,NULL,ITEM_PRIMITIVE_EX,create_parm("Temp","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",TEMPERATURE_UNIT,prm("StdForm", "25")),create_parm("Gain","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",DB_GAIN_UNIT,prm("StdForm", "15 dB")),create_parm("RF_Range","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",FREQUENCY_UNIT,prm("StdForm", "10.0-20.0 GHz")),create_parm("File","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",STRING_UNIT,prm("StdForm", "\"HMC-C024_sparameters.s2p\"")));

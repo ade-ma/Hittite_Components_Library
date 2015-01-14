@@ -1,0 +1,158 @@
+set_simulator_type(1); 
+set_design_type(analogRFnet); 
+
+
+/*---------global variables------------------*/
+
+decl type_default = "Vdd1 = Vdd2 = Vdd3 = +2.5V"; 
+
+/*---------forms and formset------------------*/
+
+create_constant_form("Vdd1 = Vdd2 = Vdd3 = +2.5V", "Vdd1 = Vdd2 = Vdd3 = +2.5V", 0, " ", "Vdd1 = Vdd2 = Vdd3 = +2.5V");
+create_constant_form("Vdd1 = Vdd2 = Vdd3 = +3.5V", "Vdd1 = Vdd2 = Vdd3 = +3.5V", 0, " ", "Vdd1 = Vdd2 = Vdd3 = +3.5V");
+create_constant_form("Vdd1 = Vdd2 = Vdd3 = +3V", "Vdd1 = Vdd2 = Vdd3 = +3V", 0, " ", "Vdd1 = Vdd2 = Vdd3 = +3V");
+
+create_form_set("formset_type", "Vdd1 = Vdd2 = Vdd3 = +2.5V", "Vdd1 = Vdd2 = Vdd3 = +3.5V", "Vdd1 = Vdd2 = Vdd3 = +3V");
+
+
+/*-------modified value parameter callback function--------*/
+defun Hittite_HMC517_parm_modifiedValue_cb 
+(
+ cbP, 
+ parmName, 
+ itemInfoP 
+) 
+{ 
+  decl parmList = NULL; 
+  decl type; 
+  type = pcb_get_form_value(itemInfoP, "Type");
+ 
+ if(parmName == "Type")
+  {
+    if(type == "Vdd1 = Vdd2 = Vdd3 = +2.5V")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"HMC517_2p5V_deembedded.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "Gain", "19 dB");
+      parmList = pcb_set_string(parmList, "RF_Range", "17.0-26.0 GHz");
+      parmList = pcb_set_string(parmList, "Vdd", "3 V");
+    } 
+    else if(type == "Vdd1 = Vdd2 = Vdd3 = +3.5V")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"HMC517_3p5V_deembedded.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "Gain", "19 dB");
+      parmList = pcb_set_string(parmList, "RF_Range", "17.0-26.0 GHz");
+      parmList = pcb_set_string(parmList, "Vdd", "3 V");
+    } 
+    else if(type == "Vdd1 = Vdd2 = Vdd3 = +3V")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"HMC517_3V_deembedded.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "Gain", "19 dB");
+      parmList = pcb_set_string(parmList, "RF_Range", "17.0-26.0 GHz");
+      parmList = pcb_set_string(parmList, "Vdd", "3 V");
+    } 
+  }
+  return(parmList);
+}
+
+decl Hittite_HMC517_SPCompNetlistFmt = " "; 
+decl Hittite_HMC517_net=" "; 
+Hittite_HMC517_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC517_cktName.net");
+Hittite_HMC517_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC517_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+
+create_item("Hittite_HMC517" , 	 //Component name 
+	     "GaAs PHEMT MMIC LOW NOISE AMPLIFIER 17 - 26 GHz", 	 //Description 
+	     "SNP", 	 //Instance Prefix 
+	     NULL, 	 //attribute 
+	     NULL, 	 //priority 
+	     NULL, 	 //iconName 
+	     standard_dialog, 	 //dialogCode 
+	     " ", 	 //dialogData 
+	     Hittite_HMC517_SPCompNetlistFmt, 	 //netlistFormat 
+	     "Hittite_HMC517_cktName", 	 //netlistData 
+	     ComponentAnnotFmt, 	 //displayFormat 
+	     "SYM_Amplifier", 	 //symbolName 
+	     no_artwork, //artworkType
+	     NULL, 	 //artworkData 
+	     ITEM_PRIMITIVE_EX 	 //extraAttribute 
+	     ,create_parm("File", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        STRING_UNIT,
+		        prm("StdForm", "\"HMC517_2p5V_deembedded.s2p\"")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC517_parm_modifiedValue_cb", 	 // function name 
+						  "File", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Temp", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        TEMPERATURE_UNIT,
+		        prm("StdForm", "25")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC517_parm_modifiedValue_cb", 	 // function name 
+						  "Temp", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Gain", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        DB_GAIN_UNIT,
+		        prm("StdForm", "19 dB")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC517_parm_modifiedValue_cb", 	 // function name 
+						  "Gain", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("RF_Range", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        FREQUENCY_UNIT,
+		        prm("StdForm", "17.0-26.0 GHz")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC517_parm_modifiedValue_cb", 	 // function name 
+						  "RF_Range", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Vdd", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        VOLTAGE_UNIT,
+		        prm("StdForm", "3 V")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC517_parm_modifiedValue_cb", 	 // function name 
+						  "Vdd", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Type", 	 //Param name 
+		        "Component type",	 //Param Desc 
+		        PARM_NOT_NETLISTED | PARM_DISCRETE_VALUE,
+		        "formset_type", 	 //formset 
+		        UNITLESS_UNIT,
+		        prm(type_default)		 //defaultValue 
+ 			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC517_parm_modifiedValue_cb", 	 // function name 
+						  "Type", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+);

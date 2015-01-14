@@ -1,0 +1,52 @@
+set_simulator_type(1); 
+set_design_type(analogRFnet); 
+
+decl Hittite_HMC_C017_SPCompNetlistFmt = " "; 
+decl Hittite_HMC_C017_net=" "; 
+Hittite_HMC_C017_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC_C017_cktName.net");
+Hittite_HMC_C017_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC_C017_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+
+create_item("Hittite_HMC_C017" , 	 //Component name 
+	     "WIDEBAND LNA MODULE 17-27 GHz", 	 //Description 
+	     "SNP", 	 //Instance Prefix 
+	     NULL, 	 //attribute 
+	     NULL, 	 //priority 
+	     NULL, 	 //iconName 
+	     standard_dialog, 	 //dialogCode 
+	     " ", 	 //dialogData 
+	     Hittite_HMC_C017_SPCompNetlistFmt, 	 //netlistFormat 
+	     "Hittite_HMC_C017_cktName", 	 //netlistData 
+	     ComponentAnnotFmt, 	 //displayFormat 
+	     "SYM_Amplifier", 	 //symbolName 
+	     no_artwork, //artworkType
+	     NULL, 	 //artworkData 
+	     ITEM_PRIMITIVE_EX 	 //extraAttribute 
+	     ,create_parm("Temp", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        TEMPERATURE_UNIT,
+		        prm("StdForm", "25")
+	     )
+	     ,create_parm("Gain", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        DB_GAIN_UNIT,
+		        prm("StdForm", "18 dB")
+	     )
+	     ,create_parm("RF_Range", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        FREQUENCY_UNIT,
+		        prm("StdForm", "17.0-27.0 GHz")
+	     )
+	     ,create_parm("File", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "string", 	 //formset 
+		        STRING_UNIT,
+		        prm("string", "HMC-C017_deembedded.s2p")
+	     )
+);

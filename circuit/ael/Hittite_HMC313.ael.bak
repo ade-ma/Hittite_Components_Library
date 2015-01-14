@@ -1,0 +1,45 @@
+set_simulator_type(1); 
+set_design_type(analogRFnet); 
+
+decl Hittite_HMC313_SPCompNetlistFmt = " "; 
+decl Hittite_HMC313_net=" "; 
+Hittite_HMC313_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC313_cktName.net");
+Hittite_HMC313_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC313_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+
+create_item("Hittite_HMC313" , 	 //Component name 
+	     "GaAs InGaP HBT MMIC BROADBAND AMPLIFIER GAIN BLOCK  DC-6.0 GHz", 	 //Description 
+	     "SNP", 	 //Instance Prefix 
+	     NULL, 	 //attribute 
+	     NULL, 	 //priority 
+	     NULL, 	 //iconName 
+	     standard_dialog, 	 //dialogCode 
+	     " ", 	 //dialogData 
+	     Hittite_HMC313_SPCompNetlistFmt, 	 //netlistFormat 
+	     "Hittite_HMC313_cktName", 	 //netlistData 
+	     ComponentAnnotFmt, 	 //displayFormat 
+	     "Amp_Symbol_3_1", 	 //symbolName 
+	     fixed_artwork, //artworkType
+	     "sot26_105597", 	 //artworkData 
+	     ITEM_PRIMITIVE_EX 	 //extraAttribute 
+	     ,create_parm("Temp", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        TEMPERATURE_UNIT,
+		        prm("StdForm", "25")
+	     )
+	     ,create_parm("RF_Range", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        FREQUENCY_UNIT,
+		        prm("StdForm", "0-6 GHz")
+	     )
+	     ,create_parm("File", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "string", 	 //formset 
+		        STRING_UNIT,
+		        prm("string", "HMC313_deembedded.s2p")
+	     )
+);

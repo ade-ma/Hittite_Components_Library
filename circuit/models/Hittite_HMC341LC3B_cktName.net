@@ -1,0 +1,5 @@
+define Hittite_HMC341LC3B_cktName(Pin1 Pin2 )
+parameters Temp=" " Vdd=" " Id=" " Gain=" " RF_Range=" " File=" " 
+#uselib "ckt", "S2P" 
+S2P:X1 Pin1 Pin2 0 Temp=Temp Vdd=Vdd Id=Id Gain=Gain RF_Range=RF_Range File=File 
+end Hittite_HMC341LC3B_cktName 

@@ -1,0 +1,403 @@
+<?xml version="1.0" ?> 
+<COMPONENTS>
+ <COMPONENT>
+  <NAME>Hittite_HMC154S8</NAME>
+  <DESCRIPTION>GaAs MMIC SMT Low Distortion  T/R Switch DC-2.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC174MS8</NAME>
+  <DESCRIPTION>GaAs MMIC T/R SWITCH DC - 3 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC182S14</NAME>
+  <DESCRIPTION>GaAs MMIC SP4T Non-reflective Switch DC- 2.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC183QS24</NAME>
+  <DESCRIPTION>GaAs MMIC SP8T Non-Reflective Switch DC :- 2.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC190MS8</NAME>
+  <DESCRIPTION>GaAs MMIC SPDT Switch DC : 3 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC194MS8</NAME>
+  <DESCRIPTION>GaAs MMIC SPDT Switch DC : 3 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC195</NAME>
+  <DESCRIPTION>GaAs MMIC SOT26 T/R Switch DC- 2.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC197</NAME>
+  <DESCRIPTION>GaAs MMIC SOT26 SPDT Switch DC- 3 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC199MS8</NAME>
+  <DESCRIPTION>GaAs MMIC SOT26 SPDT Switch DC- 3 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC221</NAME>
+  <DESCRIPTION>GaAs MMIC SOT26 SPDT  Switch DC- 3 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC224MS8</NAME>
+  <DESCRIPTION>GaAs MMIC T/R SWITCH DC- 5.0-6.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC226</NAME>
+  <DESCRIPTION>GaAs MMIC +3V SOT26 Transmit/ Recieve Switch DC- 0.0-2.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC232</NAME>
+  <DESCRIPTION>GaAs MMIC SPDT Non-Reflective  Switch DC- 15.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC232C8</NAME>
+  <DESCRIPTION>GaAs MMIC SMT HIGH Isolation SPDT Switch DC- 8.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC234C8</NAME>
+  <DESCRIPTION>GaAs MMIC SMT HIGH Isolation SPDT Switch DC- 8.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC240</NAME>
+  <DESCRIPTION>GaAs MMIC SPDT SWITCH DC - 4.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC241LP3</NAME>
+  <DESCRIPTION>GaAs MMIC SP4T Non-Reflective Switch DC- 4.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC241QS16</NAME>
+  <DESCRIPTION>GaAs MMIC SP4T Non-Reflective Switch DC- 3.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC244G16</NAME>
+  <DESCRIPTION>GaAs MMIC SP4T Non-Reflective Switch DC- 4.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC245QS16</NAME>
+  <DESCRIPTION>GaAs MMIC SP3T Non-Reflective Switch DC- 3.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC252QS24</NAME>
+  <DESCRIPTION>GaAs MMIC SP6T Non-Reflective Switch DC- 3.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC253QS24</NAME>
+  <DESCRIPTION>GaAs MMIC SP8T Non-Reflective Switch DC- 2.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC270MS8G</NAME>
+  <DESCRIPTION>GaAs MMIC SPDT Non Reflective Switch  DC - 8.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC276QS24</NAME>
+  <DESCRIPTION>GaAs MMIC 4*2 Switch Matrix 0.7-3.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC284MS8G</NAME>
+  <DESCRIPTION>GaAs MMIC SPDT Non Reflective Switch  DC - 3.50 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC321LP4</NAME>
+  <DESCRIPTION>GaAs MMIC SP8T Non-Reflective Positive Control Switch DC- 8 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC336MS8G</NAME>
+  <DESCRIPTION>GaAs MMIC SPDT Non Reflective Poitive Control Switch  DC - 6 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC344</NAME>
+  <DESCRIPTION>GaAs MMIC SP4T Non-reflective Switch DC- 8.0GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC344LH5</NAME>
+  <DESCRIPTION>GaAs MMIC SP4T Non-reflective Switch DC- 12 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC344LP3</NAME>
+  <DESCRIPTION>GaAs MMIC SP4T Non-reflective Switch DC- 8.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC347</NAME>
+  <DESCRIPTION>GaAs MMIC SPDT Non Reflective Switch  DC - 20.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC347C8</NAME>
+  <DESCRIPTION>GaAs MMIC SMT High Isolation  SPDT Switch  DC - 8.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC347LP3</NAME>
+  <DESCRIPTION>GaAs MMIC SPDT Non Reflective Switch  DC - 14.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC348LP3</NAME>
+  <DESCRIPTION>GaAs MMIC SPDT Non Reflective Switch  DC - 2.5 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC349LP4C</NAME>
+  <DESCRIPTION>High Isolation SPDT Non Reflective Switch  DC - 4.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC349MS8G</NAME>
+  <DESCRIPTION>High Isolation SPDT Non Reflective Switch  DC - 4.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC393MS8G</NAME>
+  <DESCRIPTION>GaAs MMIC DPDT Diversity Switch 5-6 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC427LP3</NAME>
+  <DESCRIPTION>GaAs MMIC Positive Control Transfer Switch DC -8.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC435MS8G</NAME>
+  <DESCRIPTION>SPDT Non Reflective Switch  DC - 4.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC436MS8G</NAME>
+  <DESCRIPTION>GaAs MMIC DPDT Diversity Or SP3T Switch 4.9-5.9 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC446</NAME>
+  <DESCRIPTION>GaAs MMIC 10W T/R Switch 824-894 MHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC484MS8G</NAME>
+  <DESCRIPTION>GaAs MMIC 10W T/R Switch DC-3.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC536MS8G</NAME>
+  <DESCRIPTION>GaAs MMIC Positive Control T/R Switch DC-6.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC544</NAME>
+  <DESCRIPTION>GaAs MMIC  T/R Switch DC-4.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC545</NAME>
+  <DESCRIPTION>GaAs MMIC  SPDT Switch DC-3.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC547LP3</NAME>
+  <DESCRIPTION>GaAs MMIC  SPDT Non Reflective Switch DC-20.0 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC574MS8</NAME>
+  <DESCRIPTION>GaAs MMIC 5 Watt T/R Switch DC - 3 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC595</NAME>
+  <DESCRIPTION>GaAs MMIC 3 Watt T/R Switch DC - 3 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>Both</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C011</NAME>
+  <DESCRIPTION>GaAs MMIC SPDT Non Reflective Switch DC - 20 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+ <COMPONENT>
+  <NAME>Hittite_HMC_C019</NAME>
+  <DESCRIPTION>High Isolation SPST Switch  Module  DC - 20 GHz</DESCRIPTION>
+  <VENDOR>Hittite Microwave Corporation</VENDOR>
+  <LIBRARY>Hittite_Components_Library</LIBRARY>
+  <PLACEMENT>NOLAYOUT</PLACEMENT>
+  <URL>http://www.hittite.com</URL>
+ </COMPONENT>
+</COMPONENTS>

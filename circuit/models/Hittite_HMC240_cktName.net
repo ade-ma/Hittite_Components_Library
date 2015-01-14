@@ -1,0 +1,5 @@
+define Hittite_HMC240_cktName(Pin1 Pin2 Pin3 )
+parameters File=" " Temp=" " 
+#uselib "ckt", "S3P" 
+S3P:X1 Pin1 Pin2 Pin3 0 File=File Temp=Temp 
+end Hittite_HMC240_cktName 

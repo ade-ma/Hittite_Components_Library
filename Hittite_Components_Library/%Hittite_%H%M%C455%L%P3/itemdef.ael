@@ -1,0 +1,7 @@
+set_simulator_type(1);
+set_design_type(analogRFnet);
+decl Hittite_HMC455LP3_SPCompNetlistFmt = " ";
+decl Hittite_HMC455LP3_net=" ";
+Hittite_HMC455LP3_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC455LP3_cktName.net");
+Hittite_HMC455LP3_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC455LP3_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+create_item("Hittite_HMC455LP3" ,"InGaP HBT 0.5 Watt High IP3 AMPLIFIER 1.7-2.5 GHz","SNP",NULL,NULL,NULL,standard_dialog," ",Hittite_HMC455LP3_SPCompNetlistFmt,"Hittite_HMC455LP3_cktName",ComponentAnnotFmt,"Amp_Symbol_3_10",fixed_artwork,"lp3_105347",ITEM_PRIMITIVE_EX,create_parm("Temp","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",TEMPERATURE_UNIT,prm("StdForm", "25")),create_parm("Gain","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",DB_GAIN_UNIT,prm("StdForm", "13 dB")),create_parm("RF_Range","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",FREQUENCY_UNIT,prm("StdForm", "1.7-2.5 GHz")),create_parm("File","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",STRING_UNIT,prm("StdForm", "\"HMC455LP3_deembedded.s2p\"")));

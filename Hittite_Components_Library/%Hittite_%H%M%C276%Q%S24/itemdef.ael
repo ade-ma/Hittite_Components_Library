@@ -1,0 +1,95 @@
+set_simulator_type(1);
+set_design_type(analogRFnet);
+decl type_default = "State 1 Selected";
+create_constant_form("State 1 Selected", "State 1 Selected", 0, " ", "State 1 Selected");
+create_constant_form("State 2 Selected", "State 2 Selected", 0, " ", "State 2 Selected");
+create_constant_form("State 3 Selected", "State 3 Selected", 0, " ", "State 3 Selected");
+create_constant_form("State 4 Selected", "State 4 Selected", 0, " ", "State 4 Selected");
+create_constant_form("State 5 Selected", "State 5 Selected", 0, " ", "State 5 Selected");
+create_constant_form("State 6 Selected", "State 6 Selected", 0, " ", "State 6 Selected");
+create_constant_form("State 7 Selected", "State 7 Selected", 0, " ", "State 7 Selected");
+create_constant_form("State 8 Selected", "State 8 Selected", 0, " ", "State 8 Selected");
+create_constant_form("State 9 Selected", "State 9 Selected", 0, " ", "State 9 Selected");
+create_constant_form("State 10 Selected", "State 10 Selected", 0, " ", "State 10 Selected");
+create_constant_form("State 11 Selected", "State 11 Selected", 0, " ", "State 11 Selected");
+create_constant_form("State 12 Selected", "State 12 Selected", 0, " ", "State 12 Selected");
+create_constant_form("State 13 Selected", "State 13 Selected", 0, " ", "State 13 Selected");
+create_constant_form("State 14 Selected", "State 14 Selected", 0, " ", "State 14 Selected");
+create_constant_form("State 15 Selected", "State 15 Selected", 0, " ", "State 15 Selected");
+create_constant_form("State 16 Selected", "State 16 Selected", 0, " ", "State 16 Selected");
+create_form_set("formset_type", "State 1 Selected", "State 2 Selected", "State 3 Selected", "State 4 Selected", "State 5 Selected", "State 6 Selected", "State 7 Selected", "State 8 Selected", "State 9 Selected", "State 10 Selected", "State 11 Selected", "State 12 Selected", "State 13 Selected", "State 14 Selected", "State 15 Selected", "State 16 Selected");
+defun Hittite_HMC276QS24_parm_modifiedValue_cb(cbP,parmName,itemInfoP){decl parmList = NULL;
+decl type;
+type = pcb_get_form_value(itemInfoP, "Type");
+if(parmName == "Type"){if(type == "State 1 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state1_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 2 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state2_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 3 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state3_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 4 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state4_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 5 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state5_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 6 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state6_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 7 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state7_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 8 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state8_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 9 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state9_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 10 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state10_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 11 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state11_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 12 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state12_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 13 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state13_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 14 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state14_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 15 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state15_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+else if(type == "State 16 Selected"){parmList = pcb_set_string(parmList, "File", "\"HMC276QS24_state16_deembedded.s6p\"");
+parmList = pcb_set_string(parmList, "Temp", "25");
+parmList = pcb_set_string(parmList, "RF_Range", "0.7-3.0 GHz");
+}
+}
+return(parmList);
+}
+decl Hittite_HMC276QS24_SPCompNetlistFmt = " ";
+decl Hittite_HMC276QS24_net=" ";
+Hittite_HMC276QS24_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC276QS24_cktName.net");
+Hittite_HMC276QS24_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC276QS24_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+create_item("Hittite_HMC276QS24" ,"GaAs MMIC 4*2 Switch Matrix 0.7-3.0 GHz","SNP",NULL,NULL,NULL,standard_dialog," ",Hittite_HMC276QS24_SPCompNetlistFmt,"Hittite_HMC276QS24_cktName",ComponentAnnotFmt,"Sym_6_Port_HMC276_Switch",fixed_artwork,"qs24_105599",ITEM_PRIMITIVE_EX,create_parm("File","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",STRING_UNIT,prm("StdForm", "\"HMC276QS24_state1_deembedded.s6p\""),list(dm_create_cb(PARM_MODIFIED_CB,"Hittite_HMC276QS24_parm_modifiedValue_cb","File",TRUE))),create_parm("Temp","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",TEMPERATURE_UNIT,prm("StdForm", "25"),list(dm_create_cb(PARM_MODIFIED_CB,"Hittite_HMC276QS24_parm_modifiedValue_cb","Temp",TRUE))),create_parm("RF_Range","No Description Entered.",PARM_NOT_EDITED,"StdFileFormSet",FREQUENCY_UNIT,prm("StdForm", "0.7-3.0 GHz"),list(dm_create_cb(PARM_MODIFIED_CB,"Hittite_HMC276QS24_parm_modifiedValue_cb","RF_Range",TRUE))),create_parm("Type","Component type",PARM_NOT_NETLISTED | PARM_DISCRETE_VALUE,"formset_type",UNITLESS_UNIT,prm(type_default),list(dm_create_cb(PARM_MODIFIED_CB,"Hittite_HMC276QS24_parm_modifiedValue_cb","Type",TRUE))));

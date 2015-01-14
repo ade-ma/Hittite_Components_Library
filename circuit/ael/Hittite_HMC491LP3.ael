@@ -1,0 +1,149 @@
+set_simulator_type(1); 
+set_design_type(analogRFnet); 
+
+
+/*---------global variables------------------*/
+
+decl type_default = "Bypass mode"; 
+
+/*---------forms and formset------------------*/
+
+create_constant_form("Bypass mode", "Bypass mode", 0, " ", "Bypass mode");
+create_constant_form("LNA mode", "LNA mode", 0, " ", "LNA mode");
+
+create_form_set("formset_type", "Bypass mode", "LNA mode");
+
+
+/*-------modified value parameter callback function--------*/
+defun Hittite_HMC491LP3_parm_modifiedValue_cb 
+(
+ cbP, 
+ parmName, 
+ itemInfoP 
+) 
+{ 
+  decl parmList = NULL; 
+  decl type; 
+  type = pcb_get_form_value(itemInfoP, "Type");
+ 
+ if(parmName == "Type")
+  {
+    if(type == "Bypass mode")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"HMC491LP3_Bypass_mode_deembedded.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "Gain", "16 dB");
+      parmList = pcb_set_string(parmList, "RF_Range", "3.4-3.8 GHz");
+      parmList = pcb_set_string(parmList, "Vdd", "3 V");
+    } 
+    else if(type == "LNA mode")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"HMC491LP3_LNA_mode_deembedded.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "Gain", "16 dB");
+      parmList = pcb_set_string(parmList, "RF_Range", "3.4-3.8 GHz");
+      parmList = pcb_set_string(parmList, "Vdd", "3 V");
+    } 
+  }
+  return(parmList);
+}
+
+decl Hittite_HMC491LP3_SPCompNetlistFmt = " "; 
+decl Hittite_HMC491LP3_net=" "; 
+Hittite_HMC491LP3_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC491LP3_cktName.net");
+Hittite_HMC491LP3_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC491LP3_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+
+create_item("Hittite_HMC491LP3" , 	 //Component name 
+	     "GaAs MMIC LOW NOISE AMPLIFIER w BYPASS MODE 3.4 - 3.8 GHz", 	 //Description 
+	     "SNP", 	 //Instance Prefix 
+	     NULL, 	 //attribute 
+	     NULL, 	 //priority 
+	     NULL, 	 //iconName 
+	     standard_dialog, 	 //dialogCode 
+	     " ", 	 //dialogData 
+	     Hittite_HMC491LP3_SPCompNetlistFmt, 	 //netlistFormat 
+	     "Hittite_HMC491LP3_cktName", 	 //netlistData 
+	     ComponentAnnotFmt, 	 //displayFormat 
+	     "Amp_Symbol_3_10", 	 //symbolName 
+	     fixed_artwork, //artworkType
+	     "lp3_105347", 	 //artworkData 
+	     ITEM_PRIMITIVE_EX 	 //extraAttribute 
+	     ,create_parm("File", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        STRING_UNIT,
+		        prm("StdForm", "\"HMC491LP3_Bypass_mode_deembedded.s2p\"")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC491LP3_parm_modifiedValue_cb", 	 // function name 
+						  "File", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Temp", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        TEMPERATURE_UNIT,
+		        prm("StdForm", "25")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC491LP3_parm_modifiedValue_cb", 	 // function name 
+						  "Temp", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Gain", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        DB_GAIN_UNIT,
+		        prm("StdForm", "16 dB")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC491LP3_parm_modifiedValue_cb", 	 // function name 
+						  "Gain", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("RF_Range", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        FREQUENCY_UNIT,
+		        prm("StdForm", "3.4-3.8 GHz")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC491LP3_parm_modifiedValue_cb", 	 // function name 
+						  "RF_Range", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Vdd", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        VOLTAGE_UNIT,
+		        prm("StdForm", "3 V")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC491LP3_parm_modifiedValue_cb", 	 // function name 
+						  "Vdd", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Type", 	 //Param name 
+		        "Component type",	 //Param Desc 
+		        PARM_NOT_NETLISTED | PARM_DISCRETE_VALUE,
+		        "formset_type", 	 //formset 
+		        UNITLESS_UNIT,
+		        prm(type_default)		 //defaultValue 
+ 			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC491LP3_parm_modifiedValue_cb", 	 // function name 
+						  "Type", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+);

@@ -1,0 +1,16 @@
+decl Hittite_Components_Library_PATH = designKitRecord[1];
+decl Hittite_Components_Library_BITMAP_DIR = sprintf("%s/circuit/bitmaps/%s/",Hittite_Components_Library_PATH,
+				 on_PC?"pc":"unix"); 
+decl Hittite_Components_Library_CIRCUIT_AEL_DIR  = sprintf("%s/circuit/ael/",Hittite_Components_Library_PATH);
+decl Hittite_Components_Library_CIRCUIT_ARTWORK_DIR  = sprintf("%s/circuit/artwork/",Hittite_Components_Library_PATH);
+decl Hittite_Components_Library_CIRCUIT_MODEL_DIR = sprintf("%s/circuit/models/",Hittite_Components_Library_PATH);
+decl Hittite_Components_Library_CIRCUIT_DATA_DIR = sprintf("%s/circuit/data/",Hittite_Components_Library_PATH);
+decl Hittite_Components_Library_DE_AEL_DIR = sprintf("%s/de/ael/",Hittite_Components_Library_PATH);
+
+//load artwork macro AEL files 
+
+//load palette.ael 
+if(is_pdeoa_mode())
+	load(strcat(Hittite_Components_Library_DE_AEL_DIR,"palette"));
+else
+	load(strcat(Hittite_Components_Library_DE_AEL_DIR,"palette"), "CmdOp");

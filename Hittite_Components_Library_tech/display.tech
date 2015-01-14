@@ -1,0 +1,45 @@
+<!DOCTYPE Display>
+<Display>
+  <Lpp_Display_Order order="0">
+    <LPP name="default:drawing"/>
+    <LPP name="diel2:drawing"/>
+    <LPP name="bound:drawing"/>
+    <LPP name="silk_screen:drawing"/>
+    <LPP name="silk_screen2:drawing"/>
+    <LPP name="case_dimensions:drawing"/>
+    <LPP name="pc1:drawing"/>
+    <LPP name="pc2:drawing"/>
+    <LPP name="pc3:drawing"/>
+    <LPP name="pc4:drawing"/>
+    <LPP name="pc5:drawing"/>
+    <LPP name="pc6:drawing"/>
+    <LPP name="pc7:drawing"/>
+    <LPP name="pc8:drawing"/>
+    <LPP name="pcvia1:drawing"/>
+    <LPP name="pcvia2:drawing"/>
+    <LPP name="pcvia3:drawing"/>
+    <LPP name="pcvia4:drawing"/>
+    <LPP name="pcvia5:drawing"/>
+    <LPP name="pcvia6:drawing"/>
+    <LPP name="pcvia7:drawing"/>
+    <LPP name="solder_mask:drawing"/>
+    <LPP name="IC_pin_number:drawing"/>
+    <LPP name="IC_pin1_marker:drawing"/>
+    <LPP name="hpeesof_region:drawing"/>
+    <LPP name="momentum_err:drawing"/>
+    <LPP name="momentum_box:drawing"/>
+    <LPP name="momentum_ref_offset:drawing"/>
+    <LPP name="SOLDERMASK_HATCH:drawing"/>
+    <LPP name="GROUND_PAD_OUTLINE:drawing"/>
+    <LPP name="SOLDERMASK_OUTLINE:drawing"/>
+    <LPP name="NOTES:drawing"/>
+    <LPP name="TITLEBLOCK:drawing"/>
+    <LPP name="DIM:drawing"/>
+    <LPP name="DEFPOINTS:drawing"/>
+    <LPP name="FOOTPRINT:drawing"/>
+    <LPP name="HATCH:drawing"/>
+    <LPP name="VPORT:drawing"/>
+    <LPP name="layer2:drawing"/>
+  </Lpp_Display_Order>
+  <Current_Lpp name="diel2:drawing"/>
+</Display>

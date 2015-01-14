@@ -1,0 +1,126 @@
+set_simulator_type(1); 
+set_design_type(analogRFnet); 
+
+
+/*---------global variables------------------*/
+
+decl type_default = "All Off"; 
+
+/*---------forms and formset------------------*/
+
+create_constant_form("All Off", "All Off", 0, " ", "All Off");
+create_constant_form("RF1 Selected", "RF1 Selected", 0, " ", "RF1 Selected");
+create_constant_form("RF2 Selected", "RF2 Selected", 0, " ", "RF2 Selected");
+
+create_form_set("formset_type", "All Off", "RF1 Selected", "RF2 Selected");
+
+
+/*-------modified value parameter callback function--------*/
+defun Hittite_HMC349MS8G_parm_modifiedValue_cb 
+(
+ cbP, 
+ parmName, 
+ itemInfoP 
+) 
+{ 
+  decl parmList = NULL; 
+  decl type; 
+  type = pcb_get_form_value(itemInfoP, "Type");
+ 
+ if(parmName == "Type")
+  {
+    if(type == "All Off")
+    {
+      parmList = pcb_set_string(parmList, "File", "HMC349MS8G_deembedded_All_OFF.s3p");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "RF_Range", "0-4 GHz");
+    } 
+    else if(type == "RF1 Selected")
+    {
+      parmList = pcb_set_string(parmList, "File", "HMC349MS8G_deembedded_rf1_selected.s3p");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "RF_Range", "0-4 GHz");
+    } 
+    else if(type == "RF2 Selected")
+    {
+      parmList = pcb_set_string(parmList, "File", "HMC349MS8G_deembedded_rf2_selected.s3p");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_string(parmList, "RF_Range", "0-4 GHz");
+    } 
+  }
+  return(parmList);
+}
+
+decl Hittite_HMC349MS8G_SPCompNetlistFmt = " "; 
+decl Hittite_HMC349MS8G_net=" "; 
+Hittite_HMC349MS8G_net = strcat(Hittite_Components_Library_CIRCUIT_MODEL_DIR, "Hittite_HMC349MS8G_cktName.net");
+Hittite_HMC349MS8G_SPCompNetlistFmt= strcat("#include \"",Hittite_HMC349MS8G_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+
+create_item("Hittite_HMC349MS8G" , 	 //Component name 
+	     "High Isolation SPDT Non Reflective Switch  DC - 4.0 GHz", 	 //Description 
+	     "SNP", 	 //Instance Prefix 
+	     NULL, 	 //attribute 
+	     NULL, 	 //priority 
+	     NULL, 	 //iconName 
+	     standard_dialog, 	 //dialogCode 
+	     " ", 	 //dialogData 
+	     Hittite_HMC349MS8G_SPCompNetlistFmt, 	 //netlistFormat 
+	     "Hittite_HMC349MS8G_cktName", 	 //netlistData 
+	     ComponentAnnotFmt, 	 //displayFormat 
+	     "Sym_3_Port_MS8_Switch", 	 //symbolName 
+	     fixed_artwork, //artworkType
+	     "ms8g_105590", 	 //artworkData 
+	     ITEM_PRIMITIVE_EX 	 //extraAttribute 
+	     ,create_parm("File", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "string", 	 //formset 
+		        STRING_UNIT,
+		        prm("string", "HMC349MS8G_deembedded_All_OFF.s3p")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC349MS8G_parm_modifiedValue_cb", 	 // function name 
+						  "File", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Temp", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        TEMPERATURE_UNIT,
+		        prm("StdForm", "25")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC349MS8G_parm_modifiedValue_cb", 	 // function name 
+						  "Temp", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("RF_Range", 	 //Param name 
+		        "No Description Entered.", 	 //Param Desc 
+		        PARM_NOT_EDITED, 	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        FREQUENCY_UNIT,
+		        prm("StdForm", "0-4 GHz")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC349MS8G_parm_modifiedValue_cb", 	 // function name 
+						  "RF_Range", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Type", 	 //Param name 
+		        "Component type",	 //Param Desc 
+		        PARM_NOT_NETLISTED | PARM_DISCRETE_VALUE,
+		        "formset_type", 	 //formset 
+		        UNITLESS_UNIT,
+		        prm(type_default)		 //defaultValue 
+ 			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "Hittite_HMC349MS8G_parm_modifiedValue_cb", 	 // function name 
+						  "Type", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+);
